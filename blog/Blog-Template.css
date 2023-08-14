@@ -90,16 +90,16 @@
   margin: 17px auto 0 0;
   padding: 0;
 }
-
 @media (max-width: 1199px) {
   .u-section-1 .u-text-1 {
     margin-top: 96px;
   }
 
   .u-section-1 .u-blog-1 {
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 40px;
-    height: auto;
+    height: 55px; /* You can adjust this value as needed */
+  }
 }
 
   .u-section-1 .u-repeater-1 {
