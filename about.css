@@ -39,14 +39,14 @@
   margin: 31px auto 60px 33px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 3000px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 793px;
+    min-height: 700px;
   }
 
   .u-section-1 .u-text-1 {
     width: auto;
-    margin-top: 178px;
+    margin-top: 70px;
     margin-right: -502px;
     margin-left: 0;
   }
