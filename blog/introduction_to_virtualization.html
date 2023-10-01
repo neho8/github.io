@@ -99,7 +99,7 @@
          <center><span style="font-size: 1.5rem;">Date: 01.10.2023 + Video below</span></center>
       <p> <br> </p>
               <h3 style="text-align: left;">
-                <span style="font-weight: 700;">It's An Essential Skill</span>
+                <span style="font-weight: 700;">What Is Virtualization?</span>
               </h3>
               <p id="isPasted">
                 <span style="font-size: 1.875rem;">
@@ -112,15 +112,19 @@
                 </span>
               </p>
 	      <p>
-                <span style="font-size: 1.4rem;">Virtualization is a must-know skill for IT pros and cybersecurity enthusiasts. It boosts efficiency and security. Let's dive into the basics and explore two common solutions: virtual machines and dual boot setups.</span>
+                <span style="font-size: 1.4rem;">Virtualization is a process that allows a computer to share its hardware resources with multiple digitally separated environments. Each virtualized environment runs within its allocated resources, such as memory, processing power, and storage. With virtualization, we can switch between diverse operating systems on the same machine/server without rebooting.</span>
               </p>
              <p> <br /> </p>
 	      <h3 style="text-align: left;">
-                <span style="font-weight: 700;">What's Virtualization?</span>
+                <span style="font-weight: 700;">Why is virtualization important?</span>
               </h3>
 	      <p>
               <p>
-                <span style="font-size: 1.4rem;">Virtualization is a process that allows a computer to share its hardware resources with multiple digitally separated environments. Each virtualized environment runs within its allocated resources, such as memory, processing power, and storage.</span>
+                <span style="font-size: 1.4rem;">In server management, virtualization offers security, up-to-date backups, and space efficiency. It shrinks multiple servers onto one machine, isolating them. If one server has issues, it won't affect the others.</span>
+              </p>
+	       <p>
+              <p>
+                <span style="font-size: 1.4rem;">Virtual machines also enable flexibility to share processing power, allowing administrators to adapt to varying server demands. For example, resources can be shifted to an email server during high activity and then reallocated to a web server during peak traffic.</span>
               </p>
              <p> <br /> </p>
         <h3 style="text-align: left;">
@@ -128,7 +132,23 @@
         </h3>
       <p>
             <p>
-              <span style="font-size: 1.4rem;">VMs are versatile. They provide secure spaces for software testing and development, optimize hardware use, and help with hands-on security training. VMs also improve system security by keeping critical services separate.</span>
+              <span style="font-size: 1.4rem;">VMs are versatile. They provide secure environments for software testing and development, optimize hardware use, and help with hands-on security training. VMs also improve system security by keeping critical services separate. Virtual machines are operated from the computer hardware by a hypervisor.</span>
+            </p>
+           <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Hypervisor</span>
+        </h3>
+            <p>
+            <p>
+              <span style="font-size: 1.4rem;">The hypervisor is a software component that manages multiple virtual machines in a computer. It ensures that each virtual machine gets the allocated resources and does not interfere with the operation of other virtual machines. There are two types of hypervisors.</span>
+            </p>
+            <p>
+            <p>
+              <span style="font-size: 1.4rem;"><b>Type 1 hypervisor:</b> a type 1 hypervisor, or bare-metal hypervisor, is a program installed directly on the computer’s hardware instead of the operating system. Therefore, type 1 hypervisors have better performance and are commonly used by enterprise applications.</span>
+            </p>
+	     <p>
+            <p>
+              <span style="font-size: 1.4rem;"><b>Type 2 hypervisor:</b> also known as a hosted hypervisor, the type 2 hypervisor is installed on an operating system. Type 2 hypervisors are suitable for end-user computing.</span>
             </p>
            <p> <br /> </p>
 	      <h3 style="text-align: left;">
@@ -148,36 +168,11 @@
                 <span style="font-size: 1.4rem;">6. <b>Enjoy Your VM:</b> Use it like a physical machine, run apps, and create snapshots for backups.</span>
 	     </p>
              <p> <br /> </p>
-        <h3 style="text-align: left;">
-              <span style="font-weight: 700;">Dual Boot</span>
-        </h3>
-      <p>
-            <p>
-              <span style="font-size: 1.4rem;">Dual Boot is flexible. It lets you create task-specific environments without virtualization hassle. You get direct hardware access for better gaming and specific tasks. It also keeps your data safer by separating environments, reducing the risk of issues spreading.</span>
-            </p>
-           <p> <br /> </p>
-           <h3 style="text-align: left;">
-            <span style="font-weight: 700;">Set Up Dual Boot (Windows & Ubuntu)</span>
-          </h3>
-          </p>
-            <span style="font-size: 1.4rem;">1. <b>Backup Data:</b> Always back up your important data before making major changes.</span>
-          <p>
-            <span style="font-size: 1.4rem;">2. <b>Create Ubuntu Install Media:</b>Download Ubuntu ISO and create a bootable USB drive with Rufus (Windows) or Etcher (macOS/Linux).</span>
-          <p>
-            <span style="font-size: 1.4rem;">3. <b>Partition Your Drive:</b> Use Windows' disk management to create a partition for Ubuntu.</span>
-          <p>
-            <span style="font-size: 1.4rem;">4. <b>Install Ubuntu:</b> Boot from the USB, select "Install Ubuntu alongside Windows," and choose the partition.</span>
-          </p>
-            <span style="font-size: 1.4rem;">5. <b>Complete Installation:</b> Follow on-screen instructions. Ubuntu's GRUB bootloader lets you pick between Windows and Ubuntu on startup.</span>
-          </p>
-            <span style="font-size: 1.4rem;">6. <b>Choose Your OS:</b> Now, you can choose the OS each time you boot your computer.</span>
-           </p>
-         <p> <br /> </p>
 	      <h3 style="text-align: left;">
                 <span style="font-weight: 700;">Closure</span>
               </h3>
 	       <p>
-                <span style="font-size: 1.4rem;">Virtualization via VMs or dual booting lets you maximize hardware by running multiple OSs on one machine. Each has unique advantages, catering to various use cases and preferences. Whether you like VM versatility or dual boot isolation, virtualization tech transforms how we use computers, offering new possibilities and flexibility.</span>
+                <span style="font-size: 1.4rem;">In brief, virtualization is a crucial technology for efficient resource sharing among isolated environments, offering improved security, streamlined management, and adaptability. Virtual Machines (VMs) are versatile tools for achieving these benefits, and understanding Type 1 and Type 2 hypervisors helps in selecting the right solution. The article also provides practical guidance on setting up VMs with VirtualBox, empowering users to maximize productivity and resource optimization. In essence, virtualization is vital for modern computing, providing flexibility, efficiency, and enhanced performance and security.</span>
 	     </p>
 	      </p>
 	<br style="line-height:0px;" />
