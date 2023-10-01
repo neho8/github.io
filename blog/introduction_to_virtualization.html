@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en">
 
@@ -6,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="Post 1 Headline">
   <meta name="description" content="">
-  <title>Start Learning Linux</title>
+  <title>Introduction to Virtualization</title>
   <link rel="stylesheet" href="../nicepage.css" media="screen">
   <link rel="stylesheet" href="../Post-Template.css" media="screen">
   <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
@@ -91,16 +92,16 @@
       <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
         <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
           <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
-            src="../images/linux.png"><!--/blog_post_image--><!--blog_post_header-->
-          <h2 class="u-align-center u-blog-control u-text u-text-1">Start Learning Linux</h2>
+            src="../images/vlcsnap(2).png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Introduction to Virtualization</h2>
           <!--/blog_post_header--><!--blog_post_content-->
  <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
- <center><span style="font-size: 1.5rem;">Date: 22.09.2023 + Video below</span></center>
-	 <p> <br /> </p>
-               <h3 style="text-align: left;">
-                <span style="font-weight: 700;">Linux For Everyone</span>
-              </h3>     
-	 <p id="isPasted">
+         <center><span style="font-size: 1.5rem;">Date: 01.10.2023 + Video below</span></center>
+      <p> <br> </p>
+              <h3 style="text-align: left;">
+                <span style="font-weight: 700;">It's An Essential Skill</span>
+              </h3>
+              <p id="isPasted">
                 <span style="font-size: 1.875rem;">
                   <span style="font-size: 1.5rem;">
                     <span style="font-size: 1rem;">
@@ -109,55 +110,78 @@
                     </span>
                   </span>
                 </span>
-               </p>
-	      <p>
-                <span style="font-size: 1.4rem;">Whether you're an IT professional or curious to explore the world of hacking, learning and mastering the Linux operation system is crucial.</span>
-              </p>
-	       <p>
-                <span style="font-size: 1.4rem;">For IT professionals, learning Linux is central for various advanced job roles, including DevOps, cloud, system, and network administration, making it a key asset for a successful IT career.</span>
               </p>
 	      <p>
-                <span style="font-size: 1.4rem;">For cyber enthusiasts - Linux is an excellent choice due to its restrictions-free environments and other ideal advantages, unlike Windows and macOS limitations due to their closed systems and proprietary software.</span>
+                <span style="font-size: 1.4rem;">Virtualization is a must-know skill for IT pros and cybersecurity enthusiasts. It boosts efficiency and security. Let's dive into the basics and explore two common solutions: virtual machines and dual boot setups.</span>
               </p>
              <p> <br /> </p>
 	      <h3 style="text-align: left;">
-                <span style="font-weight: 700;">What Is Linux?</span>
+                <span style="font-weight: 700;">What's Virtualization?</span>
               </h3>
 	      <p>
               <p>
-                <span style="font-size: 1.4rem;">In 1991, Linus Torvalds started the Linux kernel. What turns it into an operating system are the extras added to it, like a package manager, desktop environment, shell, bootloader, and more.</span>
+                <span style="font-size: 1.4rem;">Virtualization creates virtual versions of operating systems, storage, or network resources. It abstracts physical hardware, letting multiple virtual instances share resources. Key benefits include resource optimization, isolation, and flexibility.</span>
               </p>
-	      <p>
-                <span style="font-size: 1.4rem;">Linux's open-source nature has led to countless customizations, resulting in a wide range of distributions. These distributions, numbering in the hundreds, if not thousands, serve specific purposes or easily cater to the creative interests of users.</span>
-              </p>
-	      <p>
-                <span style="font-size: 1.4rem;">Notable distributions include Ubuntu (widely used), Kali Linux (gathers a great selection of hacking tools), Debian (classy), Arch Linux (preferred by experts), and Red Hat Enterprise Linux (commercial and costly).</span>
              <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Virtual Machines (VMs)</span>
+        </h3>
+      <p>
+            <p>
+              <span style="font-size: 1.4rem;">VMs are versatile. They provide secure spaces for software testing and development, optimize hardware use, and help with hands-on security training. VMs also improve system security by keeping critical services separate.</span>
+            </p>
+           <p> <br /> </p>
 	      <h3 style="text-align: left;">
-                <span style="font-weight: 700;">Linux Terminal</span>
+                <span style="font-weight: 700;">Set Up a VM with VirtualBox</span>
               </h3>
-	      <p>
-                <span style="font-size: 1.4rem;">To unleash Linux's full power, you should dive into the command line or terminal. Even though there's a graphical user interface (GUI) available, professionals and hackers prefer the terminal for its speed, efficiency, and versatility.</span>
-	     </p>
-	       <p>
-                <span style="font-size: 1.4rem;">To learn your first Linux commands and to be able to operate through the terminal, I recommend that you watch the entirety of the <u><a href="https://www.youtube.com/watch?v=VbEx7B_PTOE&ab_channel=NetworkChuck" target="_blank">Linux for Hackers</a></u> video series by YouTuber NetworkChuck.</span>
-	     </p>
-	    </p>
-	      <p>
-                <span style="font-size: 1.4rem;">While watching the video series, I strongly suggest practicing the commands using a Linux virtual machine with the "Parrot" distribution, which is the same distribution featured in the videos.</span>
               </p>
+                <span style="font-size: 1.4rem;">1. <b>Get VirtualBox:</b> Download and install it from <u><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox's website.</a></u></span>
+              <p>
+                <span style="font-size: 1.4rem;">2. <b>Get an OS Image:</b> Grab an ISO file for your guest OS (like Windows, Ubuntu, or macOS).</span>
+              <p>
+                <span style="font-size: 1.4rem;">3. <b>Create a VM:</b> In VirtualBox, click "New," follow the wizard to name, allocate memory, and create a virtual hard disk.</span>
 	      <p>
-                <span style="font-size: 1.4rem;">After you have finished watching all the videos in the series, you can start practicing the Linux commands in all kinds of exercises that you find on the Internet. <u><a href="https://docs.google.com/document/d/1psuPpBOjGEOHRQcXHK8qAhXEnJpN-Yr92UL47DrqJ_E/edit?usp=sharing" target="_blank">Here is one great practice you can do.</a></u> Don't worry if in the middle of the exercise you have to learn a new command that you didn't know, that's the beauty of it! keep learning and developing.</span>
-              </p>
-	 <p> <br /> </p>
-	  <h3 style="text-align: left;">
-                <span style="font-weight: 700;">In conclusion</span>
+                <span style="font-size: 1.4rem;">4. <b>Install the Guest OS:</b> Start the VM, choose the ISO file as the boot medium, and follow the guest OS installation process.</span>
+	     </p>
+                <span style="font-size: 1.4rem;">5. <b>Optional: Guest Additions:</b> Enhance VM performance with VirtualBox Guest Additions for better host-guest integration.</span>
+	     </p>
+                <span style="font-size: 1.4rem;">6. <b>Enjoy Your VM:</b> Use it like a physical machine, run apps, and create snapshots for backups.</span>
+	     </p>
+             <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Dual Boot</span>
+        </h3>
+      <p>
+            <p>
+              <span style="font-size: 1.4rem;">Dual Boot is flexible. It lets you create task-specific environments without virtualization hassle. You get direct hardware access for better gaming and specific tasks. It also keeps your data safer by separating environments, reducing the risk of issues spreading.</span>
+            </p>
+           <p> <br /> </p>
+           <h3 style="text-align: left;">
+            <span style="font-weight: 700;">Set Up Dual Boot (Windows & Ubuntu)</span>
+          </h3>
+          </p>
+            <span style="font-size: 1.4rem;">1. <b>Backup Data:</b> Always back up your important data before making major changes.</span>
+          <p>
+            <span style="font-size: 1.4rem;">2. <b>Create Ubuntu Install Media:</b>Download Ubuntu ISO and create a bootable USB drive with Rufus (Windows) or Etcher (macOS/Linux).</span>
+          <p>
+            <span style="font-size: 1.4rem;">3. <b>Partition Your Drive:</b> Use Windows' disk management to create a partition for Ubuntu.</span>
+          <p>
+            <span style="font-size: 1.4rem;">4. <b>Install Ubuntu:</b> Boot from the USB, select "Install Ubuntu alongside Windows," and choose the partition.</span>
+          </p>
+            <span style="font-size: 1.4rem;">5. <b>Complete Installation:</b> Follow on-screen instructions. Ubuntu's GRUB bootloader lets you pick between Windows and Ubuntu on startup.</span>
+          </p>
+            <span style="font-size: 1.4rem;">6. <b>Choose Your OS:</b> Now, you can choose the OS each time you boot your computer.</span>
+           </p>
+         <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Closure</span>
               </h3>
 	       <p>
-                <span style="font-size: 1.4rem;">Discovering Linux is a must for IT pros and budding hackers alike! We introduce Linux, its diverse flavors, and the thrill of command-line magic. Explore the journey with fun tutorials and practical exercises - whether you're a pro or just getting started, Linux has something exciting for everyone!</span>
-	       </p>
-<br style="line-height:0px;" />
- </div>        </div>
+                <span style="font-size: 1.4rem;">Virtualization via VMs or dual booting lets you maximize hardware by running multiple OSs on one machine. Each has unique advantages, catering to various use cases and preferences. Whether you like VM versatility or dual boot isolation, virtualization tech transforms how we use computers, offering new possibilities and flexibility.</span>
+	     </p>
+	      </p>
+	<br style="line-height:0px;" />
+            </div>        </div>
       </div><!--/blog_post--><!--/post_details-->
     </div>
   </section>
@@ -165,7 +189,7 @@
     <div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-expanded u-video">
         <div class="embed-responsive embed-responsive-21by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LlP0e8WEZEg?si=c4VGAVofDS-UWIy2" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/" allowfullscreen></iframe>
         </div>
       </div>
     </div>
