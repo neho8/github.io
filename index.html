@@ -99,8 +99,14 @@
         /* Media query for screens with a maximum width of 768px (typical mobile screens) */
         @media (max-width: 768px) {
             .button-container {
-                display: block; /* Change to block display for mobile */
-                text-align: center; /* Center align the buttons */
+                display: flex; /* Change to flex display for mobile */
+                flex-direction: column; /* Stack buttons vertically on mobile */
+                align-items: center; /* Center align the buttons horizontally */
+                margin: 10px 0; /* Add margin for spacing between buttons */
+            }
+            
+            .u-btn {
+                margin: 10px 0; /* Adjust margin for spacing between buttons on mobile */
             }
         }
     </style>
