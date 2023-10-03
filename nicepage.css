@@ -25208,7 +25208,7 @@ section.u-color-1-light-1:before,
 .u-button-style.u-color-1-light-1,
 .u-button-style.u-color-1-light-1[class*="u-border-"] {
   color: #ffffff !important;
-  background-color: #77aad9;
+  background-color: #77aad9 !important;
 }
 .u-button-style.u-color-1-light-1:hover,
 .u-button-style.u-color-1-light-1[class*="u-border-"]:hover,
@@ -25245,10 +25245,10 @@ li.active > a.u-button-style.u-button-style.u-active-color-1-light-1,
 li.active > a.u-button-style.u-button-style.u-active-color-1-light-1[class*="u-border-"],
 input.u-field-input.u-field-input.u-active-color-1-light-1:checked {
   color: #ffffff !important;
-  background-color: #77aad9;
+  background-color: #77aad9 !important;
 }
 a.u-link.u-hover-color-1-light-1:hover {
-  color: #77aad9;
+  color: #77aad9 !important;
 }
 .u-color-1-light-2,
 .u-body.u-color-1-light-2,
@@ -27568,7 +27568,7 @@ section.u-palette-1-light-1:before,
 .u-button-style.u-palette-1-light-1,
 .u-button-style.u-palette-1-light-1[class*="u-border-"] {
   color: #ffffff !important;
-  background-color: #77aad9;
+  background-color: #77aad9 !important;
 }
 .u-button-style.u-palette-1-light-1:hover,
 .u-button-style.u-palette-1-light-1[class*="u-border-"]:hover,
