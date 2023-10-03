@@ -63,9 +63,13 @@
           <br>I'll showcase my projects and dive into it all, and you're invited along for the ride. So, if you're as interested as I am, you've found your blog.<br>
           <br>Have any questions? Don't hesitate to connect with me through my LinkedIn profile for any inquiries. In addition, feel free to check out my GitHub profile for more projects. Your feedback and collaboration are welcome.<br>
         </p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .button-container {
             display: inline-block;
+            text-align: center; /* Center align the buttons */
+            margin: 10px 0; /* Add some margin for spacing between buttons */
         }
 
         .u-btn {
@@ -84,6 +88,14 @@
         /* Add a class to target the GitHub button's background color */
         .github-btn {
             background-color: #171515 !important; /* Gray */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical mobile screens) */
+        @media (max-width: 768px) {
+            .button-container {
+                display: block; /* Change to block display for mobile */
+                text-align: center; /* Center align the buttons */
+            }
         }
     </style>
 </head>
