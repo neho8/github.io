@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Docker: A Beginner's Guide</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="../index.html" style="padding: 10px 12px;">About</a>
+            </p>
+            <li class="u-nav-item"><a
+                class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="../blog/blog.html" rel="nofollow" style="padding: 10px 12px;">Articles</a>
+            </p>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">About</a>
+                </p>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../blog/blog.html"
+                    rel="nofollow">Articles</a>
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/docker1.PNG"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Introduction to Virtualization</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+         <center><span style="font-size: 1.5rem;">Date: 06.10.2023 + Video below</span></center>
+      <p> <br> </p>
+              <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Revolutionizing Software Deployment</span>
+              </h3>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+                <span style="font-size: 1.4rem;">In today's rapidly evolving world of software development, where efficiency and flexibility are crucial, Docker takes the stage as a versatile tool that's transforming the way we deploy and manage applications.</span>
+              </p>
+            </p>
+            <p>
+              <span style="font-size: 1.4rem;">In this article, we'll simplify the concept of Docker. We'll compare it to virtual machines, explain its benefits for organizations, introduce its key components, and provide a beginner-friendly guide on how to install and use Docker. Let's dive in!</span>
+            </p>
+             <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">What is Docker?</span>
+              </h3>
+	      <p>
+              <p>
+                <span style="font-size: 1.4rem;">At its core, Docker is a free, open-source tool designed to simplify the packaging of applications and all their essential components into what we call "containers." Docker containers are like mini-computers inside your computer. They bundle together an application and everything it needs to run, such as code, libraries, and settings. These containers are portable and can work the same way on any computer, making it easier to develop and manage software.</span>
+              </p>
+             <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Docker vs. Virtual Machines</span>
+        </h3>
+      <p>
+            <p>
+              <span style="font-size: 1.4rem;">Let's clear up a common confusion by comparing Docker to traditional virtual machines (VMs):</span>
+            </p>
+          </p>
+          <span style="font-size: 1.4rem;">1. <b>Efficiency:</b> VMs are like heavyweight champs, needing a hypervisor to run an entire operating system. Docker containers, on the other hand, are lightweight and share the host OS, which means they're resource-friendly.</span>
+        <p>
+          <span style="font-size: 1.4rem;">2. <b>Speed:</b> Docker containers are quick off the blocks, starting up in seconds, while VMs can take several minutes to boot. Speed matters, especially for agile development and deployment.</span>
+        <p>
+          <span style="font-size: 1.4rem;">3. <b>Isolation:</b> VMs offer rock-solid isolation by running separate OS instances. Docker containers, though not as isolated, provide enough isolation for most use cases while being more lightweight.</span>
+         <p>
+          <span style="font-size: 1.4rem;">4. <b>Portability:</b> Docker containers are incredibly portable, ensuring that an app behaves the same way no matter where you run it. VMs are bulkier and less portable.</span>
+        </p>
+          <span style="font-size: 1.4rem;">5. <b>Maintenance:</b> VMs come with a higher maintenance overhead due to their complexity. Docker simplifies app management, lowering operational burdens.</span>
+        </p>
+       <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">The Benefits of Docker in Organizations</span>
+        </h3>
+            <p>
+            <p>
+              <span style="font-size: 1.4rem;">Docker delivers several advantages to organizations:</span>
+            </p>
+          </p>
+          <span style="font-size: 1.4rem;"><b>Consistency:</b> Docker containers wrap up all reliances, making sure apps behave consistently across various environments - from development to production.</span>
+        <p>
+          <span style="font-size: 1.4rem;"><b>Resource Savings:</b> Docker's efficiency allows organizations to maximize hardware resources, translating into reduced infrastructure costs.</span>
+        <p>
+          <span style="font-size: 1.4rem;"><b>Scalability:</b> Docker's lightweight nature and rapid startup facilitate easy scaling of apps based on demand.</span>
+         <p>
+          <span style="font-size: 1.4rem;"><b>Faster Development:</b> Developers can work in containerized environments, reducing the headache of "it works on my machine" issues and speeding up development cycles.</span>
+        </p>
+          <span style="font-size: 1.4rem;"><b>DevOps Harmony:</b> Docker plays a central role in DevOps practices, enabling continuous integration and continuous deployment (CI/CD) pipelines.</span>
+        </p>
+       <p> <br /> </p>
+       <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Key Docker Components</span>
+        </h3>
+      <p>
+      <p>
+        <span style="font-size: 1.4rem;">Before we get our hands dirty with Docker, let's meet its central aspects:</span>
+      </p>
+     </p>
+    <span style="font-size: 1.4rem;"><b>Docker Engine:</b> This is the heart of Docker, comprising the Docker daemon (the behind-the-scenes worker) and the command-line interface (CLI).</span>
+       <p>
+    <span style="font-size: 1.4rem;"><b>Docker Images:</b> These are like templates for containers. Images contain the application code, dependencies, and runtime environment.</span>
+      <p>
+    <span style="font-size: 1.4rem;"><b>Docker Containers:</b> These are actual running instances of Docker images. They're isolated and share the host OS kernel.</span>
+      <p>
+    <span style="font-size: 1.4rem;"><b>Docker Hub:</b> It's a one-stop shop for Docker images, where you can find pre-built images or share your own.</span>
+      </p>
+ <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">How to Install and Use Docker</span>
+              </h3>
+                  <p>
+                <span style="font-size: 1.4rem;">Let's dive into Docker together with some beginner-friendly steps:</span>
+                  </p>
+                  <p><span style="font-size: 1.4rem;">1. <b>Installation:</b></span></p>
+                      <p><span style="font-size: 1.4rem;"> Go to Docker's website and choose the version for your computer's operating system (Windows, macOS, or Linux).</p>
+                      <p><span style="font-size: 1.4rem;"> Follow the installation instructions.</p>
+                  
+                  <p><span style="font-size: 1.4rem;">2. <b>Verification:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> Open a terminal or command prompt.</span></p>
+                  <p><span style="font-size: 1.4rem;"> Type <span style="background-color: black; color: white;"><code>docker --version</code></span> to make sure Docker is installed correctly.</span></p>
+                  
+                  <p><span style="font-size: 1.4rem;">3. <b>Running Your First Container:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> Get an image from Docker Hub by using <span style="background-color: black; color: white;"><code>docker pull IMAGE_NAME</code></span>.</span></p>
+                      <p><span style="font-size: 1.4rem;"> Start a container with <span style="background-color: black; color: white;"><code>docker run IMAGE_NAME</code></span>.</span></p>
+                  
+                  <p><span style="font-size: 1.4rem;">4. <b>Managing Containers:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> To see running containers, use <span style="background-color: black; color: white;"><code>docker ps</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;"> To see all containers (even the stopped ones), use <span style="background-color: black; color: white;"><code>docker ps -a</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;"> You can stop a container with <span style="background-color: black; color: white;"><code>docker stop CONTAINER_ID</code></span>.</span></p>
+                  
+                  <p><span style="font-size: 1.4rem;">5. <b>Creating Dockerfiles:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> Think of Dockerfiles as recipes for making images. You'll need one for your application.</span></p>
+                  
+                  <p><span style="font-size: 1.4rem;">6. <b>Building Custom Images:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> Create your custom Docker image with <span style="background-color: black; color: white;"><code>docker build -t IMAGE_NAME</code></span> in the directory that has your Dockerfile.</span></p>
+                  
+                  <p><span style="font-size: 1.4rem;">7. <b>Sharing Images:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> You can share your custom image by uploading it to Docker Hub.</span></p>
+             <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Conclusion</span>
+              </h3>
+	       <p>
+                <span style="font-size: 1.4rem;">Docker has changed the game in how organizations develop and manage applications. It simplifies everything - from building and testing to deploying and scaling. By understanding Docker's core concepts and following the beginner-friendly steps outlined here, you'll be well on your way to unleashing the power of Docker in your development workflow. It's a modern-day essential for developers and organizations alike.</span>
+	     </p>
+	      </p>
+	<br style="line-height:0px;" />
+            </div>        </div>
+      </div><!--/blog_post--><!--/post_details-->
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-2" id="sec-aca6">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded u-video">
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+        ©&nbsp;2023&nbsp;Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
