@@ -229,24 +229,20 @@
 	 	  <p> </p>
                   <p><span style="font-size: 1.4rem;"><b>5. Copy Files into the Container</b></span></p>
 	 	  <p><span style="font-size: 1.4rem;">Copy your application files from your local machine into the container.</span></p>
-                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>COPY . /app.py</code></span></span></p>
-                  <p><span style="font-size: 1.4rem;">This assumes that your local application code is in the same directory as your Dockerfile. If not, specify your path to the application from your local machine.</span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>COPY app.py PATH/TO/DOCKERFILE/DIRECTORY</code></span></span></p>
+                  <p><span style="font-size: 1.4rem;">Make sure to specify your path to the application from your local machine.</span></p>
 	 	  <p> </p>
-                  <p><span style="font-size: 1.4rem;"><b>6. Install Dependencies (if necessary)</b></span></p>
-	 	  <p><span style="font-size: 1.4rem;">If your application has any dependencies, install them using the appropriate package manager. For example, to install Python dependencies using pip:</span></p>
-                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>RUN pip install -r requirements.txt</code></span></span></p>
-	 	  <p> </p>
-                  <p><span style="font-size: 1.4rem;"><b>7. Define the Command to Run Your Application</b></span></p>
+                  <p><span style="font-size: 1.4rem;"><b>6. Define the Command to Run Your Application</b></span></p>
 	 	  <p><span style="font-size: 1.4rem;">Specify the command that should be executed when the container starts.</span></p>
                   <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>CMD ["python", "app.py"]</code></span></span></p>
                   <p><span style="font-size: 1.4rem;">In this example, we're running a Python script named app.py.</span></p>
 	          <p> </p>         
-	 	  <p><span style="font-size: 1.4rem;"><b>8. Build the Docker Image</b></span></p>
+	 	  <p><span style="font-size: 1.4rem;"><b>7. Build the Docker Image</b></span></p>
 	 	  <p><span style="font-size: 1.4rem;">Navigate to your project directory in your terminal and run the following command to build the Docker image using the Dockerfile:</span></p>
                   <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>docker build -t IMAGE_NAME:TAG PATH/TO/DOCKERFILE/DIRECTORY</code></span></span></p>
                   <p><span style="font-size: 1.4rem;">Replace my-docker-image with a name for your Docker image.</span></p>
 	 	  <p> </p>
-                  <p><span style="font-size: 1.4rem;"><b>9. Run a Container from the Image</b></span></p>
+                  <p><span style="font-size: 1.4rem;"><b>8. Run a Container from the Image</b></span></p>
 	 	  <p><span style="font-size: 1.4rem;">Now that you've built the image, you can run a container from it:</span></p>
                   <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>docker run -d my-docker-image</code></span></span></p>
                   <p><span style="font-size: 1.4rem;">This will start a container using the image you created.</p>
