@@ -188,22 +188,25 @@
                   <p>
                 <span style="font-size: 1.4rem;">Let's dive into Docker together with some beginner-friendly steps:</span>
                   </p>
-                  <p><span style="font-size: 1.4rem;">1. <b>Installation:</b></span></p>
+                  <p><span style="font-size: 1.4rem;">1. <b>Installation and Verification:</b></span></p>
                       <p><span style="font-size: 1.4rem;"> Go to Docker's website and choose the version for your computer's operating system (Windows, macOS, or Linux).</p>
                       <p><span style="font-size: 1.4rem;"> Follow the installation instructions.</p>
+                      <p><span style="font-size: 1.4rem;"> Type <span style="background-color: black; color: white;"><code>docker --version</code></span> to make sure Docker is installed correctly.</span></p>
                   
-                  <p><span style="font-size: 1.4rem;">2. <b>Verification:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> Open a terminal or command prompt.</span></p>
-                  <p><span style="font-size: 1.4rem;"> Type <span style="background-color: black; color: white;"><code>docker --version</code></span> to make sure Docker is installed correctly.</span></p>
-                  
-                  <p><span style="font-size: 1.4rem;">3. <b>Running Your First Container:</b></span></p>
+                  <p><span style="font-size: 1.4rem;">3. <b>Running and Managing Containers:</b></span></p>
                   <p><span style="font-size: 1.4rem;"> Get an image from Docker Hub by using <span style="background-color: black; color: white;"><code>docker pull IMAGE_NAME</code></span>.</span></p>
-                      <p><span style="font-size: 1.4rem;"> Start a container with <span style="background-color: black; color: white;"><code>docker run IMAGE_NAME</code></span>.</span></p>
-                  
-                  <p><span style="font-size: 1.4rem;">4. <b>Managing Containers:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> To see running containers, use <span style="background-color: black; color: white;"><code>docker ps</code></span>.</span></p>
-                  <p><span style="font-size: 1.4rem;"> To see all containers (even the stopped ones), use <span style="background-color: black; color: white;"><code>docker ps -a</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;"> Start a container with <span style="background-color: black; color: white;"><code>docker run IMAGE_NAME</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;"> We will use the <span style="background-color: black; color: white;"><code>-d</code></span> flag to detach the container from our terminal and run it in the background.</span></p>
+	 	  <p><span style="font-size: 1.4rem;">The <span style="background-color: black; color: white;"><code>-t</code></span> flag allows you to interact with the container's shell or command-line interface, similar to how you would interact with a regular command prompt or terminal.</span></p>
+		  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>--name container-name</code></span> to name our container.</span></p>
+	          <p><span style="font-size: 1.4rem;"> To see running containers, use <span style="background-color: black; color: white;"><code>docker ps</code></span>.</span></p>
                   <p><span style="font-size: 1.4rem;"> You can stop a container with <span style="background-color: black; color: white;"><code>docker stop CONTAINER_ID</code></span>.</span></p>
+		  <p><span style="font-size: 1.4rem;"> To see all containers (even the stopped ones), use <span style="background-color: black; color: white;"><code>docker ps -a</code></span>.</span></p>
+		  <p><span style="font-size: 1.4rem;"> In order to restart the container type <span style="background-color: black; color: white;"><code>docker start CONTAINER_ID</code></span>.</span></p>
+
+	  	  <p><span style="font-size: 1.4rem;">3. <b>Executing Containerss:</b></span></p>
+                  <p><span style="font-size: 1.4rem;"> If you need to start an interactive shell inside a Docker Container, perhaps to explore the filesystem or debug running processes, use <span style="background-color: black; color: white;"><code>docker exec</code></span> with <span style="background-color: black; color: white;"><code>-it</code></span> flag.</span></p>
+		  <p><span style="font-size: 1.4rem;"> To exit the container simply type <span style="background-color: black; color: white;"><code>exit</code></span>.</span></p>
                   
                   <p><span style="font-size: 1.4rem;">5. <b>Creating Dockerfiles:</b></span></p>
                   <p><span style="font-size: 1.4rem;"> Think of Dockerfiles as recipes for making images. You'll need one for your application.</span></p>
