@@ -195,28 +195,33 @@
                       <p><span style="font-size: 1.4rem;"> Type <span style="background-color: black; color: white;"><code>docker --version</code></span> to make sure Docker is installed correctly.</span></p>
                   <p> <br /> </p>
                   <p><span style="font-size: 1.4rem;"><b>Running and Managing Containers:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> Get an image from Docker Hub by using <span style="background-color: black; color: white;"><code>docker pull IMAGE_NAME</code></span>.</span></p>
-                  <p><span style="font-size: 1.4rem;"> Start a container with <span style="background-color: black; color: white;"><code>docker run IMAGE_NAME</code></span>.</span></p>
-                  <p><span style="font-size: 1.4rem;"> We will use the <span style="background-color: black; color: white;"><code>-d</code></span> flag to detach the container from our terminal and run it in the background.</span></p>
+                  <p><span style="font-size: 1.4rem;">Get an image from Docker Hub by using <span style="background-color: black; color: white;"><code>docker pull IMAGE_NAME</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;">Start a container with <span style="background-color: black; color: white;"><code>docker run IMAGE_NAME</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;">We will use the <span style="background-color: black; color: white;"><code>-d</code></span> flag to detach the container from our terminal and run it in the background.</span></p>
 	 	  <p><span style="font-size: 1.4rem;">Additionally, the <span style="background-color: black; color: white;"><code>-t</code></span> flag allows us to interact with the container's shell or command-line interface, similar to how you would interact with a regular command prompt or terminal.</span></p>
 		  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>--name container-name</code></span> to name our container.</span></p>
-	          <p><span style="font-size: 1.4rem;"> To see running containers, use <span style="background-color: black; color: white;"><code>docker ps</code></span>.</span></p>
-                  <p><span style="font-size: 1.4rem;"> You can stop a container with <span style="background-color: black; color: white;"><code>docker stop CONTAINER_ID</code></span>.</span></p>
-		  <p><span style="font-size: 1.4rem;"> To see all containers (even the stopped ones), use <span style="background-color: black; color: white;"><code>docker ps -a</code></span>.</span></p>
-		  <p><span style="font-size: 1.4rem;"> In order to start the container type <span style="background-color: black; color: white;"><code>docker start CONTAINER_ID</code></span>.</span></p>
+	          <p><span style="font-size: 1.4rem;">To see running containers, use <span style="background-color: black; color: white;"><code>docker ps</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;">You can stop a container with <span style="background-color: black; color: white;"><code>docker stop CONTAINER_ID</code></span>.</span></p>
+		  <p><span style="font-size: 1.4rem;">To see all containers (even the stopped ones), use <span style="background-color: black; color: white;"><code>docker ps -a</code></span>.</span></p>
+		  <p><span style="font-size: 1.4rem;">In order to start the container type <span style="background-color: black; color: white;"><code>docker start CONTAINER_ID</code></span>.</span></p>
 		 <p> <br /> </p>
 	  	  <p><span style="font-size: 1.4rem;"><b>Executing Containerss:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> If we want to access an interactive shell inside a Docker Container, we will use <span style="background-color: black; color: white;"><code>docker exec</code></span> with <span style="background-color: black; color: white;"><code>-it</code></span> flag.</span></p>
-		  <p><span style="font-size: 1.4rem;"> To exit the container we simply type <span style="background-color: black; color: white;"><code>exit</code></span>.</span></p>
+                  <p><span style="font-size: 1.4rem;">If we want to access an interactive shell inside a Docker Container, we will use <span style="background-color: black; color: white;"><code>docker exec</code></span> with <span style="background-color: black; color: white;"><code>-it</code></span> flag.</span></p>
+		  <p><span style="font-size: 1.4rem;">To exit the container we simply type <span style="background-color: black; color: white;"><code>exit</code></span>.</span></p>
                   <p> <br /> </p>
                   <p><span style="font-size: 1.4rem;"><b>Creating Dockerfiles:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> Think of Dockerfiles as recipes for making images. You'll need one for your application.</span></p>
+                  <p><span style="font-size: 1.4rem;">Think of Dockerfiles as recipes for making images. You'll need one for your application.</span></p>
                   <p> <br /> </p>
                   <p><span style="font-size: 1.4rem;"><b>Building Custom Images:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> Create your custom Docker image with <span style="background-color: black; color: white;"><code>docker build -t IMAGE_NAME</code></span> in the directory that has your Dockerfile.</span></p>
+                  <p><span style="font-size: 1.4rem;">Create your custom Docker image with <span style="background-color: black; color: white;"><code>docker build -t IMAGE_NAME</code></span> in the directory that has your Dockerfile.</span></p>
                   <p> <br /> </p>
-                  <p><span style="font-size: 1.4rem;"><b>Sharing Images:</b></span></p>
-                  <p><span style="font-size: 1.4rem;"> You can share your custom image by uploading it to Docker Hub.</span></p>
+                   <p><span style="font-size: 1.4rem;"><b>Sharing your custom image on Docker Hub is simple: </b></span></p>
+                  <p><span style="font-size: 1.4rem;">Create a Docker Hub account.</span></p>
+                  <p><span style="font-size: 1.4rem;">Afterward, click the "Create Repository" button, choose your name, visibility, and description for your repository, and click "Create."</span></p>
+                  <p><span style="font-size: 1.4rem;">Login again to your account using the terminal with the <span style="background-color: black; color: white;"><code>docker login -u USERNAME</code></span> command.</span></p>
+	 	  <p><span style="font-size: 1.4rem;">Tag your custom image with the <span style="background-color: black; color: white;"><code>docker image tag NAME_OF_YOUR_IMAGE USERNAME/REPOSITORY_NAME</code></span> command.</span></p>
+		  <p><span style="font-size: 1.4rem;">Then push it to Docker Hub with <span style="background-color: black; color: white;"><code>docker push USERNAME/REPOSITORY_NAME</code></span>.</span></p>
+	          <p><span style="font-size: 1.4rem;"> Your image is now hosted in docker, and users from all over the world can pull your image!</span></p>
              <p> <br /> </p>
 	      <h3 style="text-align: left;">
                 <span style="font-weight: 700;">Conclusion</span>
