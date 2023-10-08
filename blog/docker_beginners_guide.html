@@ -186,7 +186,7 @@
                 <span style="font-weight: 700;">How to Install and Use Docker</span>
               </h3>
                   <p>
-                <span style="font-size: 1.4rem;">Let's dive into Docker together with some beginner-friendly steps:</span>
+                <span style="font-size: 1.4rem;">Let's Dive into Docker Together: A Comprehensive Beginner's Guide with Useful Commands and Steps!</span>
                   </p>
 	          <p></p>
                   <p><span style="font-size: 1.4rem;"><strong>Installation and Verification:</strong></span></p>
@@ -208,12 +208,20 @@
                   <p><span style="font-size: 1.4rem;">If we want to access an interactive shell inside a Docker Container, we will use <span style="background-color: black; color: white;"><code>docker exec</code></span> with <span style="background-color: black; color: white;"><code>-it</code></span> flags (-i & -t).</span></p>
 		  <p><span style="font-size: 1.4rem;">To exit the container we simply type <span style="background-color: black; color: white;"><code>exit</code></span>.</span></p>
                   <p> <br /> </p>
-                  <p><span style="font-size: 1.4rem;"><strong>Creating a Dockerfile and Building Docker Image</strong></span></p>
-                  <p><span style="font-size: 1.4rem;">Think of Dockerfiles as recipes for making images. You'll need one for your application.</span></p>
+                  <p><span style="font-size: 1.4rem;"><strong>Creating Dockerfiles and Building Docker Images</strong></span></p>
+                  <p><span style="font-size: 1.4rem;"><b>1. Create a Directory</b></span></p>
+	 	  <p><span style="font-size: 1.4rem;">Start by creating a new directory for your project. This directory will contain your Dockerfile and any other necessary files.</span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>mkdir my-docker-project</code></span></span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>cd my-docker-project</code></span></span></p>
+	          <p> </p>
+                  <p><span style="font-size: 1.4rem;"><b>2. Create a Dockerfile</b></span></p>
+	 	  <p><span style="font-size: 1.4rem;">Create a new file named Dockerfile in your project directory using a text editor of your choice. This file will contain the instructions for building your Docker image.</span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>touch Dockerfile</code></span></span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>nano Dockerfile</code></span></span></p>
                   <p> <br /> </p>
                    <p><span style="font-size: 1.4rem;"><strong>Sharing your custom image on Docker Hub is simple: </strong></span></p>
                   <p><span style="font-size: 1.4rem;">Create a Docker Hub account.</span></p>
-                  <p><span style="font-size: 1.4rem;">Afterward, click the "Create Repository" button, choose your name, visibility, and description for your repository, and click "Create."</span></p>
+                  <p><span style="font-size: 1.4rem;">Afterward, click the "Create Repository" button, choose your name, visibility, and description for your repository, and click "Create".</span></p>
                   <p><span style="font-size: 1.4rem;">Login again to your account using the terminal with the <span style="background-color: black; color: white;"><code>docker login -u USERNAME</code></span> command.</span></p>
 	 	  <p><span style="font-size: 1.4rem;">Tag your custom image with the <span style="background-color: black; color: white;"><code>docker image tag NAME_OF_YOUR_IMAGE USERNAME/REPOSITORY_NAME</code></span> command.</span></p>
 		  <p><span style="font-size: 1.4rem;">Then push it to Docker Hub with <span style="background-color: black; color: white;"><code>docker push USERNAME/REPOSITORY_NAME</code></span>.</span></p>
