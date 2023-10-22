@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Understanding Jenkins</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="../index.html" style="padding: 10px 12px;">About</a>
+            </p>
+            <li class="u-nav-item"><a
+                class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="../blog/blog.html" rel="nofollow" style="padding: 10px 12px;">Articles</a>
+            </p>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">About</a>
+                </p>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../blog/blog.html"
+                    rel="nofollow">Articles</a>
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1"><!--blog_post_image-->
+          <img alt="" class="u-blog-control u-expanded-width u-image u-image-round u-radius-25 u-image-1"
+            src="../images/docker1.png"><!--/blog_post_image--><!--blog_post_header-->
+          <h2 class="u-align-center u-blog-control u-text u-text-1">Understanding Jenkins</h2>
+          <!--/blog_post_header--><!--blog_post_content-->
+ <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+         <center><span style="font-size: 1.5rem;">Date: 22.10.2023 + Video below</span></center>
+      <p> <br> </p>
+              <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Automation and Efficiency</span>
+              </h3>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+	            <p>
+                <span style="font-size: 1.4rem;">Jenkins is a crucial tool for DevOps, serving as an open-source automation server. It automates code building, testing, and deployment, making it easier for developers to create and manage CI/CD pipelines.</span>
+              </p>
+             <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">What Is CI/CD pipeline?</span>
+              </h3>
+	             <p>
+              <p>
+                <span style="font-size: 1.4rem;">CI/CD (Continuous Integration/Continuous Delivery) is a process that drives software development through a path of building, testing, and deploying code before providing it to the users. Automating the process minimizes human error and maintains a consistent operation for how software is released.</span>
+              </p>
+             <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Installing Jenkins With Docker:</span>
+        </h3>
+      <p>
+            <p>
+              <span style="font-size: 1.4rem;">Docker lets us run our own Jenkins Container and host it in our local machine:</span>
+            </p>
+          </p>
+          <span style="font-size: 1.4rem;">1. <b>Install Docker:</b> If you haven't already, install Docker on your system.</span>
+        <p>
+          <span style="font-size: 1.4rem;">2. <b>Run Jenkins Container:</b> Open your terminal where you will pull and run the Jenkins container. For our coming projects, we will run Jenkins using the following commands:</span>
+          <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>docker network create jenkins</code></span></span></p>
+          <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>docker run --name jenkins --restart=on-failure --detach --network jenkins --env DOCKER_HOST=tcp://docker:2376 --env DOCKER_CERT_PATH=/certs/client --env DOCKER_TLS_VERIFY=1 --volume jenkins-data:/var/jenkins_home --volume jenkins-docker-certs:/certs/client:ro --publish 8080:8080 --publish 50000:50000 jenkins/jenkins</code></span></span></p>
+         <p>
+          <span style="font-size: 1.4rem;">3. <b>Access Jenkins:</b> Open your web browser and navigate to <span style="background-color: black; color: white;"><code>http://localhost:8080</code></span>. You will be prompted to enter an initial admin password. Retrieve it by running these commands in the terminal:</span>
+         <p>
+          <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>docker exec -it jenkins /bin/bash</code></span></span></p>
+                  <p><span style="font-size: 1.4rem;"><span style="background-color: black; color: white;"><code>cat /var/jenkins_home/secrets/initialAdminPassword</code></span></span></p>
+        <p>
+          <span style="font-size: 1.4rem;">4. <b>Set Up Jenkins:</b> Follow the setup wizard to complete the Jenkins installation, create an admin user, and install recommended plugins.</span>
+          </p>
+       <p> <br /> </p>
+        <h3 style="text-align: left;">
+              <span style="font-weight: 700;">Using the Jenkins User Interface:</span>
+        </h3>
+            <p>
+            <p>
+              <span style="font-size: 1.4rem;">The Jenkins user interface is intuitive and provides access to essential features. Here's a quick overview:</span>
+            </p>
+          </p>
+          <span style="font-size: 1.4rem;"><b>Dashboard:</b> The dashboard displays an overview of all your Jenkins jobs, their statuses, and recent builds.</span>
+        <p>
+          <span style="font-size: 1.4rem;"><b>New Items:</b> To create a new job, click on "New Item". Choose a project type (e.g., Freestyle project or Pipeline) and configure your job.</span>
+        <p>
+          <span style="font-size: 1.4rem;"><b>Build Now:</b> Manually trigger a build by clicking the "Build Now" option in your job's menu.</span>
+         <p>
+          <span style="font-size: 1.4rem;"><b>Console Output:</b> After a build, view the console output to see the progress and any errors.</span>
+        </p>
+       <p> <br /> </p>
+       <h3 style="text-align: left;">
+        <span style="font-weight: 700;">Creating Your First Jenkins Automation Build:</span>
+        </h3>
+      <p>
+      <p>
+        <span style="font-size: 1.4rem;">Let's make a simple Jenkins build that echoes "Hello, World"</span>
+      </p>
+    </p>
+    <span style="font-size: 1.4rem;">1. <b>New Item:</b> From the Jenkins dashboard, click "New Item," name your project, and select "Freestyle project".</span>
+  <p>
+    <span style="font-size: 1.4rem;">2. <b>Configure Project:</b> In the project configuration, under the "Build" section, click "Add build step" and select "Execute shell".</span>
+  <p>
+    <span style="font-size: 1.4rem;">3. <b>Command:</b>  In the "Command" field, enter the following: <span style="background-color: black; color: white;"><code>echo "Hello, World"</code></span>.</span>
+   <p>
+    <span style="font-size: 1.4rem;">4. <b>Save:</b> Save your project configuration.</span>
+    <p>
+    <span style="font-size: 1.4rem;">5. <b>Build:</b> Click "Build Now" to initiate your first Jenkins automation build.</span>
+    <p>
+      <span style="font-size: 1.4rem;">You'll see the build's progress in the console output, and the output "Hello, World!" will be displayed as everything runs successfully.</span>
+    <p>
+ <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Customizing Your Jenkins Automation Build:</span>
+              </h3>
+                  <p>
+                <span style="font-size: 1.4rem;">While the "Hello, World" example is a straightforward demonstration of Jenkins' capabilities, you can create more complex automation builds tailored to your project's specific requirements. Jenkins offers extensive customization options:</span>
+                  </p>
+                <span style="font-size: 1.4rem;"><b>Source Code Management:</b> Jenkins supports integration with various version control systems such as Git. You can configure your automation build to pull source code from a repository, ensuring that the latest code is tested and deployed.</span>
+              <p>
+                <span style="font-size: 1.4rem;"><b>Build Triggers:</b> Jenkins allows you to set up build triggers. You can configure your automation build to run on specific events, like code commits or pull requests. This ensures that your CI/CD pipeline is triggered automatically, reducing the need for manual intervention.</span>
+              <p>
+                <span style="font-size: 1.4rem;"><b>Plugins:</b> Jenkins offers a wide range of plugins to extend its functionality. You can integrate plugins for different purposes, such as code analysis, testing frameworks, deployment to various cloud platforms, and more. These plugins enhance Jenkins' capabilities and allow you to build complex automation pipelines.</span>
+               <p>
+                <span style="font-size: 1.4rem;"><b>Parameterized Builds:</b> Parameterized builds allow you to customize your automation builds by accepting user-defined parameters. This is useful when you want to perform different actions based on user input or deploy to different environments.</span>
+              <p>
+                <span style="font-size: 1.4rem;"><b>Notifications:</b> Jenkins can notify your team about build status and issues. You can set up email notifications, integrate with popular communication tools like Slack, or even use custom scripts to notify relevant team members when a build fails or succeeds.</span>
+              <p>
+                <span style="font-size: 1.4rem;"><b>Environment Setup:</b> Depending on your project requirements, you can configure Jenkins to set up specific environments for your builds. For example, you can define build agents with specific software configurations to ensure consistent and reproducible builds.</span>
+               <p>
+                <span style="font-size: 1.4rem;"><b>Testing and Reporting:</b> Jenkins provides support for running tests and generating detailed reports. You can combine your preferred testing frameworks and reporting plugins to monitor code quality and identify issues early in the development process.</span>
+              </p>
+             <p> <br /> </p>
+	      <h3 style="text-align: left;">
+                <span style="font-weight: 700;">Conclusion</span>
+              </h3>
+	       <p>
+                <span style="font-size: 1.4rem;">Jenkins is your trusted partner in the realm of DevOps, simplifying CI/CD automation, and offering endless possibilities for automation and customization. Embrace Jenkins, and it will empower your development journey like never before.</span>
+	     </p>
+	      </p>
+	<br style="line-height:0px;" />
+            </div>        </div>
+      </div><!--/blog_post--><!--/post_details-->
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-2" id="sec-aca6">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded u-video">
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rec2eOe30Hc?si=I-Va6euRSRI_Gpq7" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+        ©&nbsp;2023&nbsp;Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
