@@ -41852,4 +41852,23 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+ .nextprev a.right,
+.nextprev a.left {
+    background-color: #1C6DC5;
+    color: #ffffff !important; /* White text with !important */
+    border: 2px solid #1C6DC5;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.nextprev a.right:hover,
+.nextprev a.left:hover {
+    background-color: #0E559F; /* Darker blue background on hover */
+    color: #ffffff;
+}
+
+ 
  
