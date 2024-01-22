@@ -41869,4 +41869,28 @@ a.u-link.u-text-hover-grey-90:hover {
     color: #ffffff;
 }
  
- 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container .box {
+  background-color: #f1f1f1;
+  color:#000;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.box {
+  background-color: #111111;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px #0a0a0a1a, 0 0 0 1px #0a0a0a1a;
+  color: #111111;
+  display: block;
+  padding: 1.25rem;
+}
+
+
