@@ -17507,6 +17507,14 @@ html {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+@media screen and (min-width: 1900px) {
+.u-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  }
+}
+
 .u-body h1,
 .u-body h2,
 .u-body h3,
@@ -24900,9 +24908,22 @@ h6 {
 }
 .u-body {
   color: #111111;
-  background-color: #f5f7fa !important;
+  background-color: #E9F2FA !important;
   --effect-scale: 1.1;
 }
+
+/* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+  .u-body {
+    color: #111111;
+    background-color: #E9F2FA;
+    background-image: url('images/footer2.png') !important; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    --effect-scale: 1.1;
+  }
+}
+
 /*end-variables color*/
 /*begin-variables font*/
 .u-custom-font.u-text-font {
@@ -29561,7 +29582,7 @@ section.u-palette-5-light-3:before,
 .u-container-layout.u-container-layout.u-palette-5-light-3:before,
 .u-table-alt-palette-5-light-3 tr:nth-child(even) {
   color: #111111;
-  background-color: #f5f7fa;
+  background-color: #e9f2fa;
 }
 .u-input.u-palette-5-light-3,
 .u-field-input.u-palette-5-light-3,
@@ -37723,7 +37744,7 @@ li.active > a.u-button-style.u-text-palette-1-base,
 li.active > a.u-button-style.u-text-palette-1-base[class*="u-border-"],
 a.u-button-style.u-text-palette-1-base,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"] {
-  color: #478ac9 !important;
+  color: #1C6DC5 !important;
 }
 a.u-button-style.u-text-palette-1-base:hover,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"]:hover,
@@ -41163,132 +41184,24 @@ a.u-link.u-text-hover-grey-90:hover {
 
         .u-body
         {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         --theme-sheet-width-xl: 1140px;
         --theme-sheet-width-lg: 940px;
         --theme-sheet-width-md: 720px;
         --theme-sheet-width-sm: 540px;
         --theme-sheet-width-xs: 340px;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         }
+
+        /* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+        .u-body
+        {
+        --theme-sheet-width-xl: 1300px;
+        --theme-sheet-width-lg: 940px;
+        --theme-sheet-width-md: 720px;
+        --theme-sheet-width-sm: 540px;
+        --theme-sheet-width-xs: 340px;
+        }
+}
 
         /** common-rules **/
         h1.u-title
@@ -41775,6 +41688,14 @@ a.u-link.u-text-hover-grey-90:hover {
   font-size: 1.1rem;
 }
 
+/* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+  .u-header .u-nav-1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}
+
 .u-header .u-nav-2 {
   font-size: 1.25rem;
 }
@@ -41851,6 +41772,13 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+ /* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+ html { 
+  font-size: 17px; 
+    }
+}
 
  .nextprev a.right,
 .nextprev a.left {

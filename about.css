@@ -51,6 +51,16 @@
     margin-left: 0;
   }
 
+ /* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 95px;
+    margin-right: -502px;
+    margin-left: 0;
+  }
+}
+
   .u-section-1 .u-shape-1 {
     width: 438px;
     height: 438px;
@@ -77,6 +87,16 @@
     margin-right: 523px;
     margin-left: 0;
   }
+/* Styles for screens 1900 pixels and above */
+@media screen and (min-width: 1900px) {
+  .u-section-1 .u-text-2 {
+    width: auto;
+    font-size: 1.7rem;
+    margin-top: -364px;
+    margin-right: 523px;
+    margin-left: 0;
+  }
+}
 
   .u-section-1 .u-btn-1 {
     margin-top: 25px;
