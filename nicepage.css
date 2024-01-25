@@ -24912,18 +24912,6 @@ h6 {
   --effect-scale: 1.1;
 }
 
-/* Styles for screens 1900 pixels and above */
-@media screen and (min-width: 1900px) {
-  .u-body {
-    color: #111111;
-    background-color: #E9F2FA;
-    background-image: url('images/footer2.png') !important; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    --effect-scale: 1.1;
-  }
-}
-
 /*end-variables color*/
 /*begin-variables font*/
 .u-custom-font.u-text-font {
@@ -41820,5 +41808,4 @@ a.u-link.u-text-hover-grey-90:hover {
   display: block;
   padding: 1.25rem;
 }
-
 
