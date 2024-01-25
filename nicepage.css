@@ -24906,20 +24906,13 @@ h6 {
 .u-overlap.u-overlap-contrast .u-header {
   color: #ffffff;
 }
+
 .u-body {
   color: #111111;
   background-color: #E9F2FA !important;
   --effect-scale: 1.1;
 }
 
-/* Styles for screens 1900 pixels and above */
-@media screen and (min-width: 1900px) {
-  .u-body {
-    color: #111111;
-  background-color: #E9F2FA !important;
-  --effect-scale: 1.1;
-  }
-}
 
 /*end-variables color*/
 /*begin-variables font*/
