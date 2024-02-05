@@ -29570,7 +29570,7 @@ section.u-palette-5-light-3:before,
 .u-container-layout.u-container-layout.u-palette-5-light-3:before,
 .u-table-alt-palette-5-light-3 tr:nth-child(even) {
   color: #111111;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .u-input.u-palette-5-light-3,
 .u-field-input.u-palette-5-light-3,
