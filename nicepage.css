@@ -29570,6 +29570,18 @@ section.u-palette-5-light-3:before,
 .u-container-layout.u-container-layout.u-palette-5-light-3:before,
 .u-table-alt-palette-5-light-3 tr:nth-child(even) {
   color: #111111;
+  background-color: #FFFFFF;
+}
+.u-palette-6-light-4,
+.u-body.u-palette-6-light-4,
+section.u-palette-6-light-4:before,
+.u-palette-6-light-4 > .u-audio-main-layout-wrapper:before,
+.u-palette-6-light-4 > .u-container-layout:before,
+.u-palette-6-light-4 > .u-inner-container-layout:before,
+.u-palette-6-light-4.u-sidenav:before,
+.u-container-layout.u-container-layout.u-palette-6-light-4:before,
+.u-table-alt-palette-6-light-4 tr:nth-child(even) {
+  color: #111111;
   background-color: #e9f2fa;
 }
 .u-input.u-palette-5-light-3,
