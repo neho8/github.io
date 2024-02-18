@@ -214,19 +214,29 @@
         <p>
           <span style="font-size: 1.4rem;">Inheritance allows a new class to use the properties and methods of an existing class. It's like a family tree where children inherit features from their parents.</span>
         <p>
-        <span style="font-size: 1.4rem;">Let's create a class <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> that inherits from <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span>:</span>
+        <span style="font-size: 1.4rem;">Let's create a new class <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> that inherits from <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span>:</span>
         <p> 
           <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Student <span style="color:#fb660a;font-weight:bold">extends</span> Person {
+          </span></span><span style="display:flex;"><span>          
           </span></span><span style="display:flex;"><span>    <span style="color:#080;background-color:#0f140f;font-style:italic">// Additional attribute for Student
-          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>    String studentId;
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>          
+          </span></span><span style="display:flex;"><span>    String studentId;
+          </span></span><span style="display:flex;"><span>          
           </span></span><span style="display:flex;"><span>
+          </span></span><span style="display:flex;"><span>          
           </span></span><span style="display:flex;"><span>    <span style="color:#080;background-color:#0f140f;font-style:italic">// Method to display student information
-          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>    <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">displayStudentInfo</span>() {
+          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>          
+          </span></span><span style="display:flex;"><span>    <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">displayStudentInfo</span>() {
+          </span></span><span style="display:flex;"><span>          
+          </span></span><span style="display:flex;"><span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Name: "</span> + name);
+          </span></span><span style="display:flex;"><span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Age: "</span> + age);
           </span></span><span style="display:flex;"><span>        System.<span style="color:#ff0086;font-weight:bold">out</span>.<span style="color:#ff0086;font-weight:bold">println</span>(<span style="color:#0086d2">"Student ID: "</span> + studentId);
+          </span></span><span style="display:flex;"><span>          
           </span></span><span style="display:flex;"><span>    }
+          </span></span><span style="display:flex;"><span>          
           </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
           <p> <br /> </p>
-          <span style="font-size: 1.4rem;"><b>Now, let's use our <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class:</b></span>
+          <span style="font-size: 1.4rem;"><b>Now, let's use our <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class in Main:</b></span>
           <p> 
             <div class="field box" id="output"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
             </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
@@ -240,7 +250,7 @@
             </span></span><span style="display:flex;"><span>    }
             </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
         <p>
-        <span style="font-size: 1.4rem;">Here, when you create an object of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span>  class (<span style="font-size: 1.4rem; background-color: black; color: white;"><code>myStudent</code></span>), you pass values for the properties of both the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span> (inherited) and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> classes. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>displayStudentInfo</code></span> method of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class will then display information about the person and the student ID.</span>         
+        <span style="font-size: 1.4rem;">Here, when you create an object of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class (<span style="font-size: 1.4rem; background-color: black; color: white;"><code>myStudent</code></span>), you pass values for the properties of both the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span> (inherited) and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>displayStudentInfo</code></span> method of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class will then display information about the person and the student ID.</span>         
       <p>
         <span style="font-size: 1.4rem;">This is a simple example to illustrate the concept of inheritance, allowing you to create specialized classes that build upon existing ones. It promotes code reuse and maintains a clear hierarchy in your object-oriented design.</span>         
       <p>
