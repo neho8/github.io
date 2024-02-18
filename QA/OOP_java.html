@@ -236,28 +236,11 @@
             </span></span><span style="display:flex;"><span>        myStudent.<span style="color:#ff0086;font-weight:bold">studentId</span> = <span style="color:#0086d2">"A12345"</span>;
             </span></span><span style="display:flex;"><span>
             </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Calling methods from both Person and Student classes
-            </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        myStudent.<span style="color:#ff0086;font-weight:bold">displayInfo</span>();
-            </span></span><span style="display:flex;"><span>        myStudent.<span style="color:#ff0086;font-weight:bold">displayStudentInfo</span>();
+            </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        myStudent.<span style="color:#ff0086;font-weight:bold">displayStudentInfo</span>();
             </span></span><span style="display:flex;"><span>    }
             </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
         <p>
-        <span style="font-size: 1.4rem;">In this code, we've created a new class called <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> that extends (inherits from) the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span> class. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class has an additional property Id representing the student's ID.</span>
-        <p>
-        <p> <br /> </p>
-        <span style="font-size: 1.4rem;"><b>Using the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> Class:</b></span>
-        <p> 
-          <div id="output" class="field box"><pre style="color:#fff;background-color:#111;"><code><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic">// Main class to run the program
-          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span><span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">class</span> Main {
-          </span></span><span style="display:flex;"><span>    <span style="color:#fb660a;font-weight:bold">public</span> <span style="color:#fb660a;font-weight:bold">static</span> <span style="color:#cdcaa9;font-weight:bold">void</span> <span style="color:#ff0086;font-weight:bold">main</span>(String[] args) {
-          </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Creating an object of the Student class
-          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        Student myStudent = <span style="color:#fb660a;font-weight:bold">new</span> Student(<span style="color:#0086d2">"Alice"</span>, <span style="color:#0086f7;font-weight:bold">20</span>, <span style="color:#0086d2">"Computer Science"</span>);
-          </span></span><span style="display:flex;"><span>
-          </span></span><span style="display:flex;"><span>        <span style="color:#080;background-color:#0f140f;font-style:italic">// Calling the introduce method for students
-          </span></span></span><span style="display:flex;"><span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>        myStudent.<span style="color:#ff0086;font-weight:bold">introduce</span>();
-          </span></span><span style="display:flex;"><span>    }
-          </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-      <p>
-        <span style="font-size: 1.4rem;">Here, when you create an object of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span>  class (<span style="font-size: 1.4rem; background-color: black; color: white;"><code>myStudent</code></span>), you pass values for the properties of both the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span> (inherited) and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> classes. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>introduce</code></span> method of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class will then display information about the person and the major.</span>         
+        <span style="font-size: 1.4rem;">Here, when you create an object of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span>  class (<span style="font-size: 1.4rem; background-color: black; color: white;"><code>myStudent</code></span>), you pass values for the properties of both the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Person</code></span> (inherited) and <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> classes. The <span style="font-size: 1.4rem; background-color: black; color: white;"><code>displayStudentInfo</code></span> method of the <span style="font-size: 1.4rem; background-color: black; color: white;"><code>Student</code></span> class will then display information about the person and the student ID.</span>         
       <p>
         <span style="font-size: 1.4rem;">This is a simple example to illustrate the concept of inheritance, allowing you to create specialized classes that build upon existing ones. It promotes code reuse and maintains a clear hierarchy in your object-oriented design.</span>         
       <p>
