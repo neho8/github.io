@@ -3089,8 +3089,7 @@ base {
   display: none;
 }
 a {
-  color: #259bca;
-  text-decoration: none;
+  color: #000000;
 }
 a:hover {
   color: #0676a4;
@@ -17539,7 +17538,7 @@ h1 {
   font-size: 2.25rem;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -41247,7 +41246,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h4
         {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -41270,7 +41269,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         p.u-large-text
         {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 20px;
         margin-bottom: 20px;
         }
@@ -41282,14 +41281,13 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         p:not(.u-text-variant)
         {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-top: 20px;
         margin-bottom: 20px;
         line-height: 1.6;
         }
         a
         {
-        font-size: 1.125rem;
         line-height: 1.6;
         }
         .u-btn
@@ -41412,7 +41410,7 @@ a.u-link.u-text-hover-grey-90:hover {
         @media (max-width: 575px) {
         h3
         {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         }
         }
         @media (max-width: 767px) {
@@ -41512,7 +41510,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         .u-xs h3
         {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         }
         .u-sm p:not(.u-text-variant)
         {
@@ -41571,7 +41569,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-image:not(.u-shading) > .u-container-layout > a,
         a
         {
-        color: #478ac9;
+        color: #000000;
         }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a:hover,
         .u-gradient > .u-container-layout > a:hover,
@@ -41692,7 +41690,7 @@ a.u-link.u-text-hover-grey-90:hover {
 @media screen and (min-width: 1900px) {
   .u-header .u-nav-1 {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -41788,7 +41786,7 @@ a.u-link.u-text-hover-grey-90:hover {
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .nextprev a.right:hover,
