@@ -41843,7 +41843,6 @@ a.u-link.u-text-hover-grey-90:hover {
       background-color: #d2d1c2; }
 
       .figure.large img, .figure.full img, .figure.fullpage img, .informalfigure.large img, .informalfigure.full img, .informalfigure.fullpage img {
-        max-width: 550px;
         max-height: 450px;
         display: block;
         margin-left: auto;
