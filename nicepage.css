@@ -41238,7 +41238,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h3
         {
         font-weight: 400;
-        font-size: 2.25rem;
+        font-size: 1.83rem;
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -41819,3 +41819,67 @@ a.u-link.u-text-hover-grey-90:hover {
   padding: 1.25rem;
 }
 
+.title-prefix {
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdbdb; }
+
+  .learning_objectives, .key_takeaways, .exercises, .exercises-math, .qandaset, .keyterm {
+    padding-bottom: 20px; }
+     .learning_objectives .title, .key_takeaways .title, .exercises .title, .exercises-math .title, .qandaset .title, .keyterm .title {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.125em;
+      padding: 10px 0px 7px 0px;
+      margin-bottom: 10px; }
+     .learning_objectives ol, .learning_objectives ul, .learning_objectives p, .key_takeaways ol, .key_takeaways ul, .key_takeaways p, .exercises ol, .exercises ul, .exercises p, .exercises-math ol, .exercises-math ul, .exercises-math p, .qandaset ol, .qandaset ul, .qandaset p, .keyterm ol, .keyterm ul, .keyterm p {
+      font-family: 'Calibri2', Calibri, Arial, 'Trebuchet MS', sans-serif;
+      margin: 10px 25px 0 20px; }
+   .learning_objectives {
+    background-color: #eae9dc;
+    }
+     .learning_objectives > .title {
+      background-color: #d2d1c2; }
+
+      .figure.large img, .figure.full img, .figure.fullpage img, .informalfigure.large img, .informalfigure.full img, .informalfigure.fullpage img {
+        max-width: 550px;
+        max-height: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .figure, .informalfigure {
+          border-bottom: 1px solid #dddddd;
+          /* Figures Sizes and Placement */
+          }
+
+          .figure .title, .informalfigure .title {
+            color: #9d7a44;
+            padding: 10px 10px 0 10px; }
+
+            .key_takeaways {
+              background-color: #ecf9ea; }
+              .key_takeaways > .title {
+                color: #fff;
+                background-color: #39892f; }
+            .exercises, .exercises-math, .qandaset {
+              background-color: #e3eff7; }
+              .exercises .title, .exercises-math .title, .qandaset .title {
+                background-color: #08629a;
+                color: white; }
+                .exercises, .exercises-math, .qandaset {
+                  background-color: #d4eeff;
+                }                
+
+                .learning_objectives, .key_takeaways, .exercises, .exercises-math, .qandaset, .keyterm {
+                  padding-bottom: 20px; }
+                  .learning_objectives .title, .key_takeaways .title, .exercises .title, .exercises-math .title, .qandaset .title, .keyterm .title {
+                    font-size: 1.1em;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 0.125em;
+                    padding: 10px 0px 7px 0px;
+                    margin-bottom: 10px;
+                    }
