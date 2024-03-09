@@ -41891,3 +41891,29 @@ a.u-link.u-text-hover-grey-90:hover {
                         color: #111;
                         font-weight: bold;
                         border-bottom: 1px dashed #999; }
+
+                        .informaltable {
+                          font-size: 1.3em;
+                          border-collapse: separate;
+                          border-spacing: 8px;
+                        }
+                        
+                        .informaltable th {
+                          background-color: #f2f2f2;
+                          color: #333;
+                          padding: 8px;
+                        }
+                        
+                        .informaltable td {
+                          padding: 8px;
+                        }
+                        
+                        .informaltable tbody tr:nth-child(even) {
+                          background-color: #f9f9f9;
+                        }
+                        
+                        .informaltable tbody tr:hover {
+                          background-color: #f1f1f1;
+                        }
+                        
+                        
