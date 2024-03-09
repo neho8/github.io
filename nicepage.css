@@ -41882,3 +41882,12 @@ a.u-link.u-text-hover-grey-90:hover {
                     padding: 10px 0px 7px 0px;
                     margin-bottom: 10px;
                     }
+
+                    .link {
+                      text-decoration: underline !important;
+                      }
+
+                      .glossterm {
+                        color: #111;
+                        font-weight: bold;
+                        border-bottom: 1px dashed #999; }
