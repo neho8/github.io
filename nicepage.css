@@ -41916,4 +41916,10 @@ a.u-link.u-text-hover-grey-90:hover {
                           background-color: #f1f1f1;
                         }
                         
-                        
+                        .callout {
+                          background-color: #f4f4f4;
+                          border: solid 3px #ccc;
+                          -moz-border-radius: 5px;
+                          -webkit-border-radius: 5px;
+                          border-radius: 5px;
+                          padding: 10px; }
