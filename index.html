@@ -120,11 +120,18 @@
             color: #ffffff; /* White text on hover */
         }
         
-               /* Add a class to target the GitHub button's background color */
         .gis-btn {
             background-color: #18ab5e !important; /* Gray */
         }
-	    
+	    @media screen and (max-width: 999px) {
+        .gis-btn {
+            display: inline-block;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .gis-btn {
+            display: none;
+        }
         /* Media query for screens with a maximum width of 768px (typical mobile screens) */
         @media (max-width: 768px) {
             .button-container {
