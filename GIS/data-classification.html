@@ -114,35 +114,35 @@
                 <p><span style="font-size: 1.4rem;">The <a class="glossterm">equal interval</a> (or equal step) classification method divides the range of attribute values into equally sized classes. The number of classes is determined by the user. The equal interval classification method is best used for continuous datasets such as precipitation or temperature. In the case of the 1997 Census Bureau data, county population values across the United States range from 40 (Yellowstone National Park County, MO) to 9,184,770 (Los Angeles County, CA) for a total range of 9,184,770 − 40 = 9,184,730. If we decide to classify this data into 5 equal interval classes, the range of each class would cover a population spread of 9,184,730 / 5 = 1,836,946 (Figure 6.19 "Equal Interval Classification for 1997 US County Population Data"). The advantage of the equal interval classification method is that it creates a legend that is easy to interpret and present to a nontechnical audience. The primary disadvantage is that certain datasets will end up with most of the data values falling into only one or two classes, while few to no values will occupy the other classes. As you can see in Figure 6.19 "Equal Interval Classification for 1997 US County Population Data", almost all the counties are assigned to the first (yellow) bin.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
-                  <p class="title">Figure 6.19</span> Equal Interval Classification for 1997 US County Population Data</p>
+                  <p class="title">Figure 6.19</span> - Equal Interval Classification for 1997 US County Population Data</p>
                   <img src="gis-images/c669418ef56bdfb2a286dbf3387e3517.jpg">
                 </div>
                 &nbsp;
                 <p><span style="font-size: 1.4rem;">The <a class="glossterm">quantile</a> classification method places equal numbers of observations into each class. This method is best for data that is evenly distributed across its range. Figure 6.20 "Quantiles" shows the quantile classification method with five total classes. As there are 3,140 counties in the United States, each class in the quantile classification methodology will contain 3,140 / 5 = 628 different counties. The advantage to this method is that it often excels at emphasizing the relative position of the data values (i.e., which counties contain the top 20 percent of the US population). The primary disadvantage of the quantile classification methodology is that features placed within the same class can have wildly differing values, particularly if the data are not evenly distributed across its range. In addition, the opposite can also happen whereby values with small range differences can be placed into different classes, suggesting a wider difference in the dataset than actually exists.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
-                  <p class="title">Figure 6.20</span> Quantiles</p>
+                  <p class="title">Figure 6.20</span> - Quantiles</p>
                   <img src="gis-images/88d9d2d38addce5f58137b0f15066d2d.jpg">
                 </div>
                 &nbsp;
                 <p><span style="font-size: 1.4rem;">The <a class="glossterm">natural breaks (or Jenks)</a> classification method utilizes an algorithm to group values in classes that are separated by distinct break points. This method is best used with data that is unevenly distributed but not skewed toward either end of the distribution. Figure 6.21 "Natural Breaks" shows the natural breaks classification for the 1997 US county population density data. One potential disadvantage is that this method can create classes that contain widely varying number ranges. Accordingly, class 1 is characterized by a range of just over 150,000, while class 5 is characterized by a range of over 6,000,000. In cases like this, it is often useful to either “tweak” the classes following the classification effort or to change the labels to some ordinal scale such as “small, medium, or large.” The latter example, in particular, can result in a map that is more comprehensible to the viewer. A second disadvantage is the fact that it can be difficult to compare two or more maps created with the natural breaks classification method because the class ranges are so very specific to each dataset. In these cases, datasets that may not be overly disparate may appear so in the output graphic.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
-                  <p class="title">Figure 6.21</span> Natural Breaks</p>
+                  <p class="title">Figure 6.21</span> - Natural Breaks</p>
                   <img src="gis-images/4f17a636f3d63f632710e0f6570840eb.jpg">
                 </div>
                 &nbsp;
                 <p><span style="font-size: 1.4rem;">The <a class="glossterm">natural breaks (or Jenks)</a> classification method utilizes an algorithm to group values in classes that are separated by distinct break points. This method is best used with data that is unevenly distributed but not skewed toward either end of the distribution. Figure 6.21 "Natural Breaks" shows the natural breaks classification for the 1997 US county population density data. One potential disadvantage is that this method can create classes that contain widely varying number ranges. Accordingly, class 1 is characterized by a range of just over 150,000, while class 5 is characterized by a range of over 6,000,000. In cases like this, it is often useful to either “tweak” the classes following the classification effort or to change the labels to some ordinal scale such as “small, medium, or large.” The latter example, in particular, can result in a map that is more comprehensible to the viewer. A second disadvantage is the fact that it can be difficult to compare two or more maps created with the natural breaks classification method because the class ranges are so very specific to each dataset. In these cases, datasets that may not be overly disparate may appear so in the output graphic.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
-                  <p class="title">Figure 6.21</span> Natural Breaks</p>
+                  <p class="title">Figure 6.21</span> - Natural Breaks</p>
                   <img src="gis-images/4f17a636f3d63f632710e0f6570840eb.jpg">
                 </div>
                 &nbsp;
                 <p><span style="font-size: 1.4rem;">Finally, the standard deviation classification method forms each class by adding and subtracting the standard deviation from the mean of the dataset. The method is best suited to be used with data that conforms to a normal distribution. In the county population example, the mean is 85,108, and the standard deviation is 277,080. Therefore, as can be seen in the legend of Figure 6.22 "Standard Deviation", the central class contains values within a 0.5 standard deviation of the mean, while the upper and lower classes contain values that are 0.5 or more standard deviations above or below the mean, respectively.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
-                  <p class="title">Figure 6.22</span> Standard Deviation</p>
+                  <p class="title">Figure 6.22</span> - Standard Deviation</p>
                   <img src="gis-images/a5bfcd571c5fd7f006c647bdf306251e.jpg">
                 </div>
                 &nbsp;
@@ -160,7 +160,7 @@
                 <h3 class="title">Exercises</h3>
                 <ol class="orderedlist">
                   <li>Given the choropleth maps presented in this chapter, which do you feel best represents the dataset? Why?</li>
-                  <li>Go online and describe two other data classification methods available to GIS users./li>
+                  <li>Go online and describe two other data classification methods available to GIS users.</li>
                   <li>For the table of thirty data values created in <a class="link" target="_blank" href="descriptions-and-summaries.html">Section 6.1 "Descriptions and Summaries"</a>, Exercise 1, determine the data ranges for each class as if you were creating both equal interval and quantile classification schemes.</li>
                 </ol>
             </div>
