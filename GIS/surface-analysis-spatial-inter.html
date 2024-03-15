@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Surface Analysis: Spatial Interpolation</title>
+  <link rel="stylesheet" href="../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../Post-Template.css" media="screen">
+  <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="about.css">
+  <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
+  <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"
+          href="../index.html">Nehoray</a>
+      </h3>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse"
+          style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+            <li class="u-nav-item">
+              <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../index.html" style="padding: 10px 12px;">Home</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-border-5 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="../GIS/Course.html" rel="nofollow" style="padding: 10px 12px;">GIS Foundations</a>
+            <li class="u-nav-item">
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+             <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2" style="margin-left: 20px;"> <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html">Home</a>
+                </li><li class="u-nav-item"></li>
+              <ul class="u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="../GIS/Course.html">GIS Foundations</a>
+                </li><li class="u-nav-item"></li>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="sec-bdf0">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <!--post_details--><!--post_details_options_json--><!--{"source":""}--><!--/post_details_options_json--><!--blog_post-->
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-container-layout-1">
+          <div class="fr-view u-clearfix u-rich-text u-text u-text-2">
+            <span style="font-size: 1.2rem;" class="title-prefix">8.3</span>
+            <h2 class="u-align-center u-blog-control u-text u-text-1">Surface Analysis: Spatial Interpolation</h2>
+            <p>
+              <p id="isPasted">
+                <span style="font-size: 1.875rem;">
+                  <span style="font-size: 1.5rem;">
+                    <span style="font-size: 1rem;">
+                      <span style="font-size: 1.25rem;">
+                      </span>
+                      <p> <br> </p>
+                  <div class="learning_objectives editable block">
+                  <h3 class="title">Learning Objective</h3>
+                  <ol class="orderedlist" id="campbell_1.0-ch01_s01_l01">
+                      <li>The objective of this section is to become familiar with concepts and terms related to GIS surfaces, how to create them, and how they are used to answer specific spatial questions.</li>
+                  </ol>
+              </div>
+                <p><span style="font-size: 1.4rem;">A <a class="glossterm">surface</a> is a vector or raster dataset that contains an attribute value for every locale throughout its extent. In a sense, all raster datasets are surfaces, but not all vector datasets are surfaces. Surfaces are commonly used in a geographic information system (GIS) to visualize phenomena such as elevation, temperature, slope, aspect, rainfall, and more. In a GIS, surface analyses are usually carried out on either raster datasets or TINs (Triangular Irregular Network; <a class="link" target="_blank" href="../GIS/geospatial-data-management.html">Chapter 5 "Geospatial Data Management"</a>, <a class="link" target="_blank" href="../GIS/file-formats.html">Section 5.3.1 "File Formats"</a>), but isolines or point arrays can also be used. Interpolation is used to estimate the value of a variable at an unsampled location from measurements made at nearby or neighboring locales. Spatial interpolation methods draw on the theoretical creed of Tobler’s first law of geography, which states that “everything is related to everything else, but near things are more related than distant things.” Indeed, this basic tenet of <a class="glossterm">positive spatial autocorrelation</a> forms the backbone of many spatial analyses (Figure 8.9 "Positive and Negative Spatial Autocorrelation").</span></p>
+                &nbsp;
+                <div class="figure large medium-height editable block">
+                  <p class="title">Figure 8.9</span> - Positive and Negative Spatial Autocorrelation</p>
+                  <img src="gis-images/285839ececec2893430139135ecc195d.jpg">
+                </div>
+                &nbsp;
+                <h3>Creating Surfaces</h3>
+                &nbsp;
+                <p><span style="font-size: 1.4rem;">The ability to create a surface is a valuable tool in a GIS. The creation of raster surfaces, however, often starts with the creation of a vector surface. One common method to create such a vector surface from point data is via the generation of Thiessen (or Voronoi) polygons. Thiessen polygons are mathematically generated areas that define the sphere of influence around each point in the dataset relative to all other points (Figure 8.10 "A Vector Surface Created Using Thiessen Polygons"). Specifically, polygon boundaries are calculated as the perpendicular bisectors of the lines between each pair of neighboring points. The derived Thiessen polygons can then be used as crude vector surfaces that provide attribute information across the entire area of interest. A common example of Thiessen polygons is the creation of a rainfall surface from an array of rain gauge point locations. Employing some basic reclassification techniques, these Thiessen polygons can be easily converted to equivalent raster representations.</span></p>
+                &nbsp;
+                <div class="figure large medium-height editable block">
+                  <p class="title">Figure 8.10</span> - A Vector Surface Created Using Thiessen Polygons</p>
+                  <img src="gis-images/989baf2713da73eca8c861361a3501cd.jpg">
+                </div>
+                &nbsp;
+                <p><span style="font-size: 1.4rem;">While the creation of Thiessen polygons results in a polygon layer whereby each polygon, or raster zone, maintains a single value, <a class="glossterm">interpolation</a> is a potentially complex statistical technique that estimates the value of all unknown points between the known points. The three basic methods used to create interpolated surfaces are spline, inverse distance weighting (IDW), and trend surface. The spline interpolation method forces a smoothed curve through the set of known input points to estimate the unknown, intervening values. IDW interpolation estimates the values of unknown locations using the distance to proximal, known values. The weight placed on the value of each proximal value is in inverse proportion to its spatial distance from the target locale. Therefore, the farther the proximal point, the less weight it carries in defining the target point’s value. Finally, trend surface interpolation is the most complex method as it fits a multivariate statistical regression model to the known points, assigning a value to each unknown location based on that model.</span></p>
+                &nbsp;
+                <p><span style="font-size: 1.4rem;">Other highly complex interpolation methods exist such as <a class="glossterm">kriging</a>. Kriging is a complex geostatistical technique, similar to IDW, that employs semivariograms to interpolate the values of an input point layer and is more akin to a regression analysis.</span></p>
+                &nbsp;
+                <p><span style="font-size: 1.4rem;">Inversely, raster data can also be used to create vector surfaces. For instance, isoline maps are made up of continuous, nonoverlapping lines that connect points of equal value. Isolines have specific monikers depending on the type of information they model (e.g., elevation = contour lines, temperature = isotherms, barometric pressure = isobars, wind speed = isotachs) Figure 8.11 "Contour Lines Derived from a DEM" shows an isoline elevation map. As the elevation values of this digital elevation model (DEM) range from 450 to 950 feet, the contour lines are placed at 500, 600, 700, 800, and 900 feet elevations throughout the extent of the image. In this example, the contour interval, defined as the vertical distance between each contour line, is 100 feet. The contour interval is determined by the user during the creating of the surface.</span></p>
+                &nbsp;
+                <div class="figure large medium-height editable block">
+                  <p class="title">Figure 8.11</span> - Contour Lines Derived from a DEM</p>
+                  <img src="gis-images/9394e80abcb38028f30d04cbce13ef82.jpg">
+                </div>
+                &nbsp;
+                <div class="key_takeaways editable block">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist">
+                    <li>Spatial interpolation is used to estimate those unknown values found between known data points.</li>
+                    <li>Spatial autocorrelation is positive when mapped features are clustered and is negative when mapped features are uniformly distributed.</li>
+                    <li>Thiessen polygons are a valuable tool for converting point arrays into polygon surfaces.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block">
+            <div class="exercises editable block">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist">
+                  <li>Give an example of five phenomena in the real world that exhibit positive spatial autocorrelation.</li>
+                  <li>Give an example of five phenomena in the real world that exhibit negative spatial autocorrelation.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <p> <br> </p>
+      <div class="nextprev" style="clear:both; text-align: center;">
+      <a class="left" href="../GIS/scale-of-analysis.html" style="float: left;">❮ Previous</a>
+      <a class="right" href="../GIS/surface-analysis-terrain-mappi.html" style="float: right;">Next ❯</a>
+  </div>  
+    <p></p>     
+  </section>
+  <section class="u-clearfix u-palette-1-light-3 u-section-3" id="sec-27c2">
+    <div class="u-clearfix u-sheet u-sheet-1"></div>
+  </section>
+
+  <footer class="u-align-center u-clearfix u-footer u-white u-footer" id="sec-9996">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">
+      Made with 💙&nbsp;by
+        <a href="https://www.linkedin.com/in/nehorayshimoni/" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">Nehoray Shimoni</a>&nbsp;
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
