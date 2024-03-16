@@ -107,67 +107,67 @@
                       <li>The objective of this section is to outline the basics of the SQL language and to understand the various query techniques available in a GIS.</li>
                   </ol>
               </div>
-                <p><span style="font-size: 1.4rem;">Access to robust search and query tools is essential to examine the general trends of a dataset. <a class="glossterm">Queries</a> are essentially questions posed to a database. The selective display and retrieval of information based on these queries are essential components of any geographic information system (GIS). There are three basic methods for searching and querying attribute data: (1) selection, (2) query by attribute, and (3) query by geography.</span></p>
+                <p><span style="font-size: 1.3rem;">Access to robust search and query tools is essential to examine the general trends of a dataset. <a class="glossterm">Queries</a> are essentially questions posed to a database. The selective display and retrieval of information based on these queries are essential components of any geographic information system (GIS). There are three basic methods for searching and querying attribute data: (1) selection, (2) query by attribute, and (3) query by geography.</span></p>
                 &nbsp;
                 <h3>Selection</h3>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;"><a class="glossterm">Selection</a> represents the easiest way to search and query spatial data in a GIS. Selecting features highlight those attributes of interest, both on-screen and in the attribute table, for subsequent display or analysis. To accomplish this, one selects points, lines, and polygons simply by using the cursor to “point-and-click” the feature of interest or by using the cursor to drag a box around those features. Alternatively, one can select features by using a graphic object, such as a circle, line, or polygon, to highlight all of those features that fall within the object. Advanced options for selecting subsets of data from the larger dataset include creating a new selection, selecting from the currently selected features, adding to the current selection, and removing from the current selection.</span></p>
+                <p><span style="font-size: 1.3rem;"><a class="glossterm">Selection</a> represents the easiest way to search and query spatial data in a GIS. Selecting features highlight those attributes of interest, both on-screen and in the attribute table, for subsequent display or analysis. To accomplish this, one selects points, lines, and polygons simply by using the cursor to “point-and-click” the feature of interest or by using the cursor to drag a box around those features. Alternatively, one can select features by using a graphic object, such as a circle, line, or polygon, to highlight all of those features that fall within the object. Advanced options for selecting subsets of data from the larger dataset include creating a new selection, selecting from the currently selected features, adding to the current selection, and removing from the current selection.</span></p>
                 &nbsp;
                 <h3>Query by Attribute</h3>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">Map features and their associated data can be retrieved via the query of attribute information within the data tables. For example, search and query tools allow a user to show all the census tracts that have a population density of 500 or greater, to show all counties that are less than or equal to 100 square kilometers, or to show all convenience stores within 1 mile of an interstate highway.</span></p>
+                <p><span style="font-size: 1.3rem;">Map features and their associated data can be retrieved via the query of attribute information within the data tables. For example, search and query tools allow a user to show all the census tracts that have a population density of 500 or greater, to show all counties that are less than or equal to 100 square kilometers, or to show all convenience stores within 1 mile of an interstate highway.</span></p>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">Specifically, <a class="glossterm">SQL (Structured Query Language)</a> is a commonly used computer language developed to query attribute data within a relational database management system. Created by IBM in the 1970s, SQL allows for the retrieval of a subset of attribute information based on specific, user-defined criteria via the implementation of particular language elements. More recently, the use of SQL has been extended for use in a GIS (Shekhar and Chawla 2003).Shekhar, S., and S. Chawla. 2003. Spatial Databases: A Tour. Upper Saddle River, NJ: Prentice Hall. One important note related to the use of SQL is that the exact expression used to query a dataset depends on the GIS file format being examined. For example, ANSI SQL is a particular version used to query ArcSDE geodatabases, while Jet SQL is used to access personal geodatabases. Similarly, shapefiles, coverages, and dBASE tables use a restricted version of SQL that doesn’t support all the features of ANSI SQL or Jet SQL.</span></p>
+                <p><span style="font-size: 1.3rem;">Specifically, <a class="glossterm">SQL (Structured Query Language)</a> is a commonly used computer language developed to query attribute data within a relational database management system. Created by IBM in the 1970s, SQL allows for the retrieval of a subset of attribute information based on specific, user-defined criteria via the implementation of particular language elements. More recently, the use of SQL has been extended for use in a GIS (Shekhar and Chawla 2003).Shekhar, S., and S. Chawla. 2003. Spatial Databases: A Tour. Upper Saddle River, NJ: Prentice Hall. One important note related to the use of SQL is that the exact expression used to query a dataset depends on the GIS file format being examined. For example, ANSI SQL is a particular version used to query ArcSDE geodatabases, while Jet SQL is used to access personal geodatabases. Similarly, shapefiles, coverages, and dBASE tables use a restricted version of SQL that doesn’t support all the features of ANSI SQL or Jet SQL.</span></p>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">As discussed in <a class="link" target="_blank" href="../GIS/geospatial-data-management.html">Chapter 5 "Geospatial Data Management"</a>, <a class="link" target="_blank" href="../GIS/geospatial-database-management.html">Section 5.2 Geospatial Database Management"</a>, all attribute tables in a relational database management system (RDBMS) used for an SQL query must contain primary and/or foreign keys for proper use. In addition to these keys, SQL implements clauses to structure database queries. A <a class="glossterm">clause</a> is a language element that includes the SELECT, FROM, WHERE, ORDER BY, and HAVING query statements.</span></p>
+                <p><span style="font-size: 1.3rem;">As discussed in <a class="link" target="_blank" href="../GIS/geospatial-data-management.html">Chapter 5 "Geospatial Data Management"</a>, <a class="link" target="_blank" href="../GIS/geospatial-database-management.html">Section 5.2 Geospatial Database Management"</a>, all attribute tables in a relational database management system (RDBMS) used for an SQL query must contain primary and/or foreign keys for proper use. In addition to these keys, SQL implements clauses to structure database queries. A <a class="glossterm">clause</a> is a language element that includes the SELECT, FROM, WHERE, ORDER BY, and HAVING query statements.</span></p>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;">SELECT denotes what attribute table fields you wish to view.</span></li>
-                  <li><span style="font-size: 1.4rem;">FROM denotes the attribute table in which the information resides.</span></li>
-                  <li><span style="font-size: 1.4rem;">WHERE denotes the user-defined criteria for the attribute information that must be met in order for it to be included in the output set.</span></li>
-                  <li><span style="font-size: 1.4rem;">ORDER BY denotes the sequence in which the output set will be displayed.</span></li>
-                  <li><span style="font-size: 1.4rem;">HAVING denotes the predicate used to filter output from the ORDER BY clause.</span></li>
+                  <li><span style="font-size: 1.3rem;">SELECT denotes what attribute table fields you wish to view.</span></li>
+                  <li><span style="font-size: 1.3rem;">FROM denotes the attribute table in which the information resides.</span></li>
+                  <li><span style="font-size: 1.3rem;">WHERE denotes the user-defined criteria for the attribute information that must be met in order for it to be included in the output set.</span></li>
+                  <li><span style="font-size: 1.3rem;">ORDER BY denotes the sequence in which the output set will be displayed.</span></li>
+                  <li><span style="font-size: 1.3rem;">HAVING denotes the predicate used to filter output from the ORDER BY clause.</span></li>
                 </ul>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">While the SELECT and FROM clauses are both mandatory statements in an SQL query, the WHERE is an optional clause used to limit the output set. The ORDER BY and HAVING are optional clauses used to present the information in an interpretable manner.</span></p>
+                <p><span style="font-size: 1.3rem;">While the SELECT and FROM clauses are both mandatory statements in an SQL query, the WHERE is an optional clause used to limit the output set. The ORDER BY and HAVING are optional clauses used to present the information in an interpretable manner.</span></p>
                  &nbsp;
                  <div class="figure large medium-height editable block">
                   <p class="title">Figure 6.6</span> - Personal Addresses in “ExampleTable” Attribute Table</p>
                   <img src="gis-images/e0fe0a05ac22294241978243657ad15f.jpg">
                 </div>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">The following is a series of SQL expressions and results when applied to Figure 6.6 "Personal Addresses in “ExampleTable” Attribute Table". The title of the attribute table is “ExampleTable.” Note that the asterisk (*) denotes a special case of SELECT whereby all columns for a given record are selected:</span></p>
+                <p><span style="font-size: 1.3rem;">The following is a series of SQL expressions and results when applied to Figure 6.6 "Personal Addresses in “ExampleTable” Attribute Table". The title of the attribute table is “ExampleTable.” Note that the asterisk (*) denotes a special case of SELECT whereby all columns for a given record are selected:</span></p>
                  &nbsp;
-                <p><span style="font-size: 1.4rem;">SELECT * FROM ExampleTable WHERE City = “Upland”</span></p>
+                <p><span style="font-size: 1.3rem;">SELECT * FROM ExampleTable WHERE City = “Upland”</span></p>
                  &nbsp;
-                <p><span style="font-size: 1.4rem;">This statement returns the following:</span></p>
+                <p><span style="font-size: 1.3rem;">This statement returns the following:</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
                   <img src="gis-images/84ea86f47f2ebf999e9ea90e87cb8b8c.jpg">
                 </div>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">Consider the following statement:</span></p>
+                <p><span style="font-size: 1.3rem;">Consider the following statement:</span></p>
                 &nbsp;
-               <p><span style="font-size: 1.4rem;">SELECT LastName FROM ExampleTable WHERE State = “CA” ORDER BY FirstName</span></p>
+               <p><span style="font-size: 1.3rem;">SELECT LastName FROM ExampleTable WHERE State = “CA” ORDER BY FirstName</span></p>
                &nbsp;
-               <p><span style="font-size: 1.4rem;">This statement results in the following table sorted in ascending order by the FirstName column (not included in the output table as directed by the SELECT clause):</span></p>
+               <p><span style="font-size: 1.3rem;">This statement results in the following table sorted in ascending order by the FirstName column (not included in the output table as directed by the SELECT clause):</span></p>
                &nbsp;
                <div class="figure large medium-height editable block">
                  <img src="gis-images/f295ebb0a4bdbb24e1e7b12f6f09fe58.jpg">
                </div>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">In addition to clauses, SQL allows for the inclusion of specific operators to further delimit the result of query. These operators can be relational, arithmetic, or Boolean and will typically appear inside of conditional statements in the WHERE clause. A <a class="glossterm">relational operator</a> employs the statements equal to (=), less than (&lt;), less than or equal to (&lt;=), greater than (&gt;), or greater than or equal to (&gt;=). <a class="glossterm">Arithmetic operators</a> are those mathematical functions that include addition (+), subtraction (−), multiplication (*), and division (/). <a class="glossterm">Boolean operators</a> (also called Boolean connectors) include the statements AND, OR, XOR, and NOT. The AND connector is used to select records from the attribute table that satisfies both expressions. The OR connector selects records that satisfy either one or both expressions. The XOR connector selects records that satisfy one and only one of the expressions (the functional opposite of the AND connector). Lastly, the NOT connector is used to negate (or unselect) an expression that would otherwise be true. Put into the language of probability, the AND connector is used to represent an intersection, OR represents a union, and NOT represents a complement. Figure 6.7 "Venn Diagram of SQL Operators" illustrates the logic of these connectors, where circles A and B represent two sets of intersecting data. Keep in mind that SQL is a very exacting language and minor inconsistencies in the statement, such as additional spaces, can result in a failed query.</span></p>
+                <p><span style="font-size: 1.3rem;">In addition to clauses, SQL allows for the inclusion of specific operators to further delimit the result of query. These operators can be relational, arithmetic, or Boolean and will typically appear inside of conditional statements in the WHERE clause. A <a class="glossterm">relational operator</a> employs the statements equal to (=), less than (&lt;), less than or equal to (&lt;=), greater than (&gt;), or greater than or equal to (&gt;=). <a class="glossterm">Arithmetic operators</a> are those mathematical functions that include addition (+), subtraction (−), multiplication (*), and division (/). <a class="glossterm">Boolean operators</a> (also called Boolean connectors) include the statements AND, OR, XOR, and NOT. The AND connector is used to select records from the attribute table that satisfies both expressions. The OR connector selects records that satisfy either one or both expressions. The XOR connector selects records that satisfy one and only one of the expressions (the functional opposite of the AND connector). Lastly, the NOT connector is used to negate (or unselect) an expression that would otherwise be true. Put into the language of probability, the AND connector is used to represent an intersection, OR represents a union, and NOT represents a complement. Figure 6.7 "Venn Diagram of SQL Operators" illustrates the logic of these connectors, where circles A and B represent two sets of intersecting data. Keep in mind that SQL is a very exacting language and minor inconsistencies in the statement, such as additional spaces, can result in a failed query.</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
                   <p class="title">Figure 6.7</span> - Venn Diagram of SQL Operators</p>
                   <img src="gis-images/f29eee3abd014546748ecf5a5a598b1b.jpg">
                 </div>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">Used together, these operators combine to provide the GIS user with powerful and flexible search and query options. With this in mind, can you determine the output set of the following SQL query as it is applied to Figure 6.1 "Histogram Showing the Frequency Distribution of Exam Scores"?</span></p>
+                <p><span style="font-size: 1.3rem;">Used together, these operators combine to provide the GIS user with powerful and flexible search and query options. With this in mind, can you determine the output set of the following SQL query as it is applied to Figure 6.1 "Histogram Showing the Frequency Distribution of Exam Scores"?</span></p>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">SELECT LastName, FirstName, StreetNumber FROM ExampleTable WHERE StreetNumber >= 10000 AND StreetNumber < 100 ORDER BY LastName</span></p>
+                <p><span style="font-size: 1.3rem;">SELECT LastName, FirstName, StreetNumber FROM ExampleTable WHERE StreetNumber >= 10000 AND StreetNumber < 100 ORDER BY LastName</span></p>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">The following are the results:</span></p>
+                <p><span style="font-size: 1.3rem;">The following are the results:</span></p>
                 &nbsp;
                 <div class="figure large medium-height editable block">
                   <img src="gis-images/0b2fbb5a504bc4af7b28def08865c012.jpg">
@@ -175,10 +175,10 @@
                 &nbsp;
                 <h3>Query by Geography</h3>
                 &nbsp;
-                <p><span style="font-size: 1.4rem;">Query by geography, also known as a “spatial query,” allows one to highlight particular features by examining their position relative to other features. For example, a GIS provides robust tools that allow for the determination of the number of schools within 10 miles of a home. Several spatial query options are available, as outlined here. Throughout this discussion, the “target layer” refers to the feature dataset whose attributes are selected, while the “source layer” refers to the feature dataset on which the spatial query is applied. For example, if we were to use a state boundary polygon feature dataset to select highways from a line feature dataset (e.g., select all the highways that run through the state of Arkansas), the state layer is the source, while the highway layer is the target.</span></p>
+                <p><span style="font-size: 1.3rem;">Query by geography, also known as a “spatial query,” allows one to highlight particular features by examining their position relative to other features. For example, a GIS provides robust tools that allow for the determination of the number of schools within 10 miles of a home. Several spatial query options are available, as outlined here. Throughout this discussion, the “target layer” refers to the feature dataset whose attributes are selected, while the “source layer” refers to the feature dataset on which the spatial query is applied. For example, if we were to use a state boundary polygon feature dataset to select highways from a line feature dataset (e.g., select all the highways that run through the state of Arkansas), the state layer is the source, while the highway layer is the target.</span></p>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>INTERSECT.</b> This oft-used spatial query technique selects all features in the target layer that share a common locale with the source layer. The “intersect” query allows points, lines, or polygon layers to be used as both the source and target layers (Figure 6.8).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>INTERSECT.</b> This oft-used spatial query technique selects all features in the target layer that share a common locale with the source layer. The “intersect” query allows points, lines, or polygon layers to be used as both the source and target layers (Figure 6.8).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -187,7 +187,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>ARE WITHIN A DISTANCE OF.</b> This technique requires the user to specify some distance value, which is then used to buffer (<a class="link" target="_blank" href="../GIS/geospatial-analysis-i-vector-o.html">Chapter 7 "Geospatial Analysis I: Vector Operations"</a>, <a class="link" target="_blank" href="../GIS/multiple-layer-analysis.html">Section 7.2 "Multiple Layer Analysis"</a>) the source layer. All features that intersect this buffer are highlighted in the target layer. The “are within a distance of” query allows points, lines, or polygon layers to be used for both the source and target layers (Figure 6.9).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>ARE WITHIN A DISTANCE OF.</b> This technique requires the user to specify some distance value, which is then used to buffer (<a class="link" target="_blank" href="../GIS/geospatial-analysis-i-vector-o.html">Chapter 7 "Geospatial Analysis I: Vector Operations"</a>, <a class="link" target="_blank" href="../GIS/multiple-layer-analysis.html">Section 7.2 "Multiple Layer Analysis"</a>) the source layer. All features that intersect this buffer are highlighted in the target layer. The “are within a distance of” query allows points, lines, or polygon layers to be used for both the source and target layers (Figure 6.9).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -196,7 +196,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>COMPLETELY CONTAIN.</b> This spatial query technique returns those features that are entirely within the source layer. Features with coincident boundaries are not selected by this query type. The “completely contain” query allows for points, lines, or polygons as the source layer, but only polygons can be used as a target layer (Figure 6.10).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>COMPLETELY CONTAIN.</b> This spatial query technique returns those features that are entirely within the source layer. Features with coincident boundaries are not selected by this query type. The “completely contain” query allows for points, lines, or polygons as the source layer, but only polygons can be used as a target layer (Figure 6.10).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -205,7 +205,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>ARE COMPLETELY WITHIN.</b> This query selects those features in the target layer whose entire spatial extent occurs within the geometry of the source layer. The “are completely within” query allows for points, lines, or polygons as the target layer, but only polygons can be used as a source layer (Figure 6.11).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>ARE COMPLETELY WITHIN.</b> This query selects those features in the target layer whose entire spatial extent occurs within the geometry of the source layer. The “are completely within” query allows for points, lines, or polygons as the target layer, but only polygons can be used as a source layer (Figure 6.11).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -214,7 +214,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>HAVE THEIR CENTER IN.</b> This technique selects target features whose center, or centroid, is located within the boundary of the source feature dataset. The “have their center in” query allows points, lines, or polygon layers to be used as both the source and target layers (Figure 6.12).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>HAVE THEIR CENTER IN.</b> This technique selects target features whose center, or centroid, is located within the boundary of the source feature dataset. The “have their center in” query allows points, lines, or polygon layers to be used as both the source and target layers (Figure 6.12).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -223,7 +223,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>SHARE A LINE SEGMENTs.</b> This spatial query selects target features whose boundary geometries share a minimum of two adjacent vertices with the source layer. The “share a line segment” query allows for line or polygon layers to be used for either of the source and target layers (Figure 6.13).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>SHARE A LINE SEGMENTs.</b> This spatial query selects target features whose boundary geometries share a minimum of two adjacent vertices with the source layer. The “share a line segment” query allows for line or polygon layers to be used for either of the source and target layers (Figure 6.13).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -232,7 +232,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>TOUCH THE BOUNDARY OF.</b> This methodology is similar to the INTERSECT spatial query; however, it selects line and polygon features that share a common boundary with target layer. The “touch the boundary of” query allows for line or polygon layers to be used as both the source and target layers (Figure 6.14).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>TOUCH THE BOUNDARY OF.</b> This methodology is similar to the INTERSECT spatial query; however, it selects line and polygon features that share a common boundary with target layer. The “touch the boundary of” query allows for line or polygon layers to be used as both the source and target layers (Figure 6.14).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -241,7 +241,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>ARE IDENTICAL TO.</b> This spatial query returns features that have the exact same geographic location. The “are identical to” query can be used on points, lines, or polygons, but the target layer type must be the same as the source layer type (Figure 6.15).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>ARE IDENTICAL TO.</b> This spatial query returns features that have the exact same geographic location. The “are identical to” query can be used on points, lines, or polygons, but the target layer type must be the same as the source layer type (Figure 6.15).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -250,7 +250,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>ARE CROSSED BY THE OUTLINE OF.</b> This selection criteria returns features that share a single vertex but not an entire line segment. The “are crossed by the outline of” query allows for line or polygon layers to be used as both source and target layers (Figure 6.16).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>ARE CROSSED BY THE OUTLINE OF.</b> This selection criteria returns features that share a single vertex but not an entire line segment. The “are crossed by the outline of” query allows for line or polygon layers to be used as both source and target layers (Figure 6.16).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -259,7 +259,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>CONTAIN.</b> This method is similar to the COMPLETELY CONTAIN spatial query; however, features in the target layer will be selected even if the boundaries overlap. The “contain” query allows for point, line, or polygon features in the target layer when points are used as a source; when line and polygon target layers with a line source; and when only polygon target layers with a polygon source (Figure 6.17).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>CONTAIN.</b> This method is similar to the COMPLETELY CONTAIN spatial query; however, features in the target layer will be selected even if the boundaries overlap. The “contain” query allows for point, line, or polygon features in the target layer when points are used as a source; when line and polygon target layers with a line source; and when only polygon target layers with a polygon source (Figure 6.17).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
@@ -268,7 +268,7 @@
                 </div>
                 &nbsp;
                 <ul>
-                  <li><span style="font-size: 1.4rem;"><b>ARE CONTAINED BY.</b> This method is similar to the ARE COMPLETELY WITHIN spatial query; however, features in the target layer will be selected even if the boundaries overlap. The “are contained by” query allows for point, line, or polygon features in the target layer when polygons are used as a source; when point and line target layers with a line source; and when only point target layers with a point source (Figure 6.18).</span></li>
+                  <li><span style="font-size: 1.3rem;"><b>ARE CONTAINED BY.</b> This method is similar to the ARE COMPLETELY WITHIN spatial query; however, features in the target layer will be selected even if the boundaries overlap. The “are contained by” query allows for point, line, or polygon features in the target layer when polygons are used as a source; when point and line target layers with a line source; and when only point target layers with a point source (Figure 6.18).</span></li>
                 </ul>
                 &nbsp;
                 <div class="figure large medium-height editable block">
