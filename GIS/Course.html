@@ -17,6 +17,23 @@
       img {
         float: right;
       }
+
+      @media(max-width: 900px) {
+            /* Make the TOC title smaller than the GIS Foundations title */
+            #toc-title1 {
+                font-size: 1.3rem !important; /* Adjust the size as needed */
+            }
+            /* Increase the text size of TOC items */
+            #toc-sub-title {
+              font-size: 1.3rem !important; /* Reduce space between items */
+            }
+
+            /* Adjust the size of TOC item links */
+            #sec-1b08 a {
+                font-size: 1.2rem; /* Adjust the size as needed */
+            }
+          }
+
     </style>
     <script type="application/ld+json">
       {
@@ -108,13 +125,13 @@
     margin-bottom: 15px;
 ">GIS Foundations</h2>
         <p>
-          <span style="font-size: 1.5rem;"><b>Table of Contents</b></span>
-          <ul id="toc-top-ul">
+          <span style="font-size: 1.5rem;" id="toc-title1"><b>Table of Contents</b></span>
+          <ul id="toc-title">
             <li>
-                <h3 style="font-size: 1.4rem;"><a href="preface.html">Preface</a></h3>
+                <h3 style="font-size: 1.4rem;"><a href="preface.html" id="toc-sub-title">Preface</a></h3>
             </li>
             <li>
-                <h3 style="font-size: 1.4rem;"><a href="introduction.html">Chapter 1: Introduction</a></h3>
+                <h3 style="font-size: 1.4rem;"><a href="introduction.html"id="toc-sub-title">Chapter 1: Introduction</a></h3>
                 <ul>
                     <li><span style="font-size: 1.2rem;"><a href="spatial-thinking.html">Spatial Thinking</a></span></li>
                     <li><span style="font-size: 1.2rem;"><a href="geographic-concepts.html">Geographic Concepts</a></span></li>
@@ -122,7 +139,7 @@
                 </ul>
             </li>
             <li>
-                <h3 style="font-size: 1.4rem;"><a href="map-anatomy.html">Chapter 2: Map Anatomy</a></h3>
+                <h3 style="font-size: 1.4rem;"><a href="map-anatomy.html" id="toc-sub-title">Chapter 2: Map Anatomy</a></h3>
                 <ul>
                     <li><span style="font-size: 1.2rem;"><a href="maps-and-map-types.html">Maps and Map Types</a></span></li>
                     <li><span style="font-size: 1.2rem;"><a href="map-scale-coordinate-systems-a.html">Map Scale, Coordinate Systems, and Map Projections</a></span></li>
@@ -132,7 +149,7 @@
     
             </li>
             <li>
-              <h3 style="font-size: 1.4rem;"><a href="data-information-and-where-to-.html">Chapter 3: Data, Information, and Where to Find Them</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="data-information-and-where-to-.html" id="toc-sub-title">Chapter 3: Data, Information, and Where to Find Them</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="data-and-information.html">Data and Information</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="data-about-data.html">Data about Data</a></span></li>
@@ -140,7 +157,7 @@
               </ul>
           </li>
             <li>
-              <h3 style="font-size: 1.4rem;"><a href="data-models-for-gis.html">Chapter 4: Data Models for GIS</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="data-models-for-gis.html" id="toc-sub-title">Chapter 4: Data Models for GIS</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="raster-data-models.html">Raster Data Models</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="vector-data-models.html">Vector Data Models</a></span></li>
@@ -148,7 +165,7 @@
               </ul>
           </li>
           <li>
-              <h3 style="font-size: 1.4rem;"><a href="geospatial-data-management.html">Chapter 5: Geospatial Data Management</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="geospatial-data-management.html" id="toc-sub-title">Chapter 5: Geospatial Data Management</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="geographic-data-acquisition.html">Geographic Data Acquisition</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="geospatial-database-management.html">Geospatial Database Management</a></span></li>
@@ -157,7 +174,7 @@
               </ul>
           </li>
           <li>
-              <h3 style="font-size: 1.4rem;"><a href="data-characteristics-and-visua.html">Chapter 6: Data Characteristics and Visualization</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="data-characteristics-and-visua.html" id="toc-sub-title">Chapter 6: Data Characteristics and Visualization</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="descriptions-and-summaries.html">Descriptions and Summaries</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="searches-and-queries.html">Searches and Queries</a></span></li>
@@ -165,14 +182,14 @@
               </ul>
           </li>
           <li>
-              <h3 style="font-size: 1.4rem;"><a href="geospatial-analysis-i-vector-o.html">Chapter 7: Geospatial Analysis I: Vector Operations</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="geospatial-analysis-i-vector-o.html" id="toc-sub-title">Chapter 7: Geospatial Analysis I: Vector Operations</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="single-layer-analysis.html">Single Layer Analysis</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="multiple-layer-analysis.html">Multiple Layer Analysis</a></span></li>
               </ul>
           </li>
           <li>
-              <h3 style="font-size: 1.4rem;"><a href="geospatial-analysis-ii-raster-.html">Chapter 8: Geospatial Analysis II: Raster Data</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="geospatial-analysis-ii-raster-.html" id="toc-sub-title">Chapter 8: Geospatial Analysis II: Raster Data</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="basic-geoprocessing-with-raste.html">Basic Geoprocessing with Rasters</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="scale-of-analysis.html">Scale of Analysis</a></span></li>
@@ -181,7 +198,7 @@
               </ul>
           </li>
           <li>
-              <h3 style="font-size: 1.4rem;"><a href="cartographic-principles.html">Chapter 9: Cartographic Principles</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="cartographic-principles.html" id="toc-sub-title">Chapter 9: Cartographic Principles</a></h3>
               <ul>
                   <li><span style="font-size: 1.2rem;"><a href="color.html">Color</a></span></li>
                   <li><span style="font-size: 1.2rem;"><a href="symbology.html">Symbology</a></span></li>
@@ -189,7 +206,7 @@
               </ul>
           </li>
             <li>
-              <h3 style="font-size: 1.4rem;"><a href="gis-project-management.html">Chapter 10: GIS Project Management</a></h3>
+              <h3 style="font-size: 1.4rem;"><a href="gis-project-management.html" id="toc-sub-title">Chapter 10: GIS Project Management</a></h3>
       <ul>
         <li><span style="font-size: 1.2rem;"><a href="project-management-basics.html">Project Management Basics</a></span></li>
         <li><span style="font-size: 1.2rem;"><a href="gis-project-management-tools-a.html">GIS Project Management Tools and Techniques</a></span></li>
