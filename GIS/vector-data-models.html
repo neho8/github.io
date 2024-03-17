@@ -152,7 +152,7 @@
                 &nbsp;
                 <div class="figure large medium-height editable block">
                           <p class="title">Figure 4.12</span> - Polygon Topology</p>
-                        <image src="gis-images/3ba85e9e19d4d0bd2507b634cc52de46.jpg"></image>
+                        <image src="gis-images/de65d1872768b0767f0f81f5c1606292.jpg"></image>
                         </div>
                         &nbsp;
         <p><span style="font-size: 1.3rem;">Topology allows the computer to rapidly determine and analyze the spatial relationships of all its included features. In addition, topological information is important because it allows for efficient error detection within a vector dataset. In the case of polygon features, open or unclosed polygons, which occur when an arc does not completely loop back upon itself, and unlabeled polygons, which occur when an area does not contain any attribute information, violate polygon-arc topology rules. Another topological error found with polygon features is the <a class="glossterm">sliver</a>. Slivers occur when the shared boundary of two polygons do not meet exactly (Figure 4.13 "Common Topological Errors").<span></p>
@@ -161,53 +161,13 @@
         &nbsp;
         <div class="figure large medium-height editable block">
                   <p class="title">Figure 4.13</span> - Common Topological Errors</p>
-                <image src="gis-images/de65d1872768b0767f0f81f5c1606292.jpg"></image>
+                <image src="gis-images/3ba85e9e19d4d0bd2507b634cc52de46.jpg"></image>
                 </div>
                 &nbsp;
-				    <p><span style="font-size: 1.3rem;">In comparison with the raster data model, vector data models tend to be better representations of reality due to the accuracy and precision of points, lines, and polygons over the regularly spaced grid cells of the raster model. This results in vector data tending to be more aesthetically pleasing than raster data.</span></p>
+				    <p><span style="font-size: 1.3rem;">Many types of spatial analysis require the degree of organization offered by topologically explicit data models. In particular, network analysis (e.g., finding the best route from one location to another) and measurement (e.g., finding the length of a river segment) relies heavily on the concept of to- and from-nodes and uses this information, along with attribute information, to calculate distances, shortest routes, quickest routes, and so forth. Topology also allows for sophisticated neighborhood analysis such as determining adjacency, clustering, nearest neighbors, and so forth.</span></p>
               &nbsp;
-            <p><span style="font-size: 1.3rem;">Vector data also provides an increased ability to alter the scale of observation and analysis. As each coordinate pair associated with a point, line, and polygon represents an infinitesimally exact location (albeit limited by the number of significant digits and/or data acquisition methodologies), zooming deep into a vector image does not change the view of a vector graphic in the way that it does a raster graphic (see Figure 4.1 "Digital Picture with Zoomed Inset Showing Pixilation of Raster Image").</span></p>
+            <p><span style="font-size: 1.3rem;">Now that the basics of the concepts of topology have been outlined, we can begin to better understand the topological data model. In this model, the node acts as more than just a simple point along a line or polygon. The node represents the point of intersection for two or more arcs. Arcs may or may not be looped into polygons. Regardless, all nodes, arcs, and polygons are individually numbered. This numbering allows for quick and easy reference within the data model.</span></p>
               &nbsp;
-              <p><span style="font-size: 1.3rem;">In comparison with the raster data model, vector data models tend to be better representations of reality due to the accuracy and precision of points, lines, and polygons over the regularly spaced grid cells of the raster model. This results in vector data tending to be more aesthetically pleasing than raster data.</span></p>
-              &nbsp;
-            <p><span style="font-size: 1.3rem;">Vector data also provides an increased ability to alter the scale of observation and analysis. As each coordinate pair associated with a point, line, and polygon represents an infinitesimally exact location (albeit limited by the number of significant digits and/or data acquisition methodologies), zooming deep into a vector image does not change the view of a vector graphic in the way that it does a raster graphic (see Figure 4.1 "Digital Picture with Zoomed Inset Showing Pixilation of Raster Image").</span></p>
-              &nbsp;
-              <p><span style="font-size: 1.3rem;">In comparison with the raster data model, vector data models tend to be better representations of reality due to the accuracy and precision of points, lines, and polygons over the regularly spaced grid cells of the raster model. This results in vector data tending to be more aesthetically pleasing than raster data.</span></p>
-              &nbsp;
-            <p><span style="font-size: 1.3rem;">Vector data also provides an increased ability to alter the scale of observation and analysis. As each coordinate pair associated with a point, line, and polygon represents an infinitesimally exact location (albeit limited by the number of significant digits and/or data acquisition methodologies), zooming deep into a vector image does not change the view of a vector graphic in the way that it does a raster graphic (see Figure 4.1 "Digital Picture with Zoomed Inset Showing Pixilation of Raster Image").</span></p>
-              &nbsp;
-              <h3>Vector Data Models Structures</h3>
-              &nbsp;
-              <p><span style="font-size: 1.3rem;">Many types of spatial analysis require the degree of organization offered by topologically explicit data models. In particular, network analysis (e.g., finding the best route from one location to another) and measurement (e.g., finding the length of a river segment) relies heavily on the concept of to- and from-nodes and uses this information, along with attribute information, to calculate distances, shortest routes, quickest routes, and so forth. Topology also allows for sophisticated neighborhood analysis such as determining adjacency, clustering, nearest neighbors, and so forth.</span></p>
-              &nbsp;
-              <p><span style="font-size: 1.3rem;">Now that the basics of the concepts of topology have been outlined, we can begin to better understand the topological data model. In this model, the node acts as more than just a simple point along a line or polygon. The node represents the point of intersection for two or more arcs. Arcs may or may not be looped into polygons. Regardless, all nodes, arcs, and polygons are individually numbered. This numbering allows for quick and easy reference within the data model.</span></p>
-              &nbsp;
-                <div class="figure large medium-height editable block">
-                  <p class="title">Figure 4.4</span> - Land-Use/Land-Cover Raster Image</p>
-                <image src="gis-images/4f569d2d42f91bf0048bc723c900f886.jpg"></image>
-                </div>
-                &nbsp;
-			      <p><span style="font-size: 1.3rem;">Several methods exist for encoding raster data from scratch. Three of these models are as follows:</span></p>
-                &nbsp;
-                  <p><span style="font-size: 1.3rem;"><b>1.</b><a class="glossterm">Cell-by-cell raster encoding.</a> This minimally intensive method encodes a raster by creating records for each cell value by row and column (Figure 4.5 "Cell-by-Cell Encoding of Raster Data"). This method could be thought of as a large spreadsheet wherein each cell of the spreadsheet represents a pixel in the raster image. This method is also referred to as “exhaustive enumeration.”</span></p>
-                  <p><span style="font-size: 1.3rem;"><b>2.</b><a class="glossterm">Run-length raster encoding.</a> This method encodes cell values in runs of similarly valued pixels and can result in a highly compressed image file (Figure 4.6 "Run-Length Encoding of Raster Data"). The run-length encoding method is useful in situations where large groups of neighboring pixels have similar values (e.g., discrete datasets such as land use/land cover or habitat suitability) and is less useful where neighboring pixel values vary widely (e.g., continuous datasets such as elevation or sea-surface temperatures).</span></p>
-                  <p><span style="font-size: 1.3rem;"><b>3.</b><a class="glossterm">Quad-tree raster encoding.</a> This method divides a raster into a hierarchy of quadrants that are subdivided based on similarly valued pixels (Figure 4.7 "Quad-Tree Encoding of Raster Data"). The division of the raster stops when a quadrant is made entirely from cells of the same value. A quadrant that cannot be subdivided is called a “leaf node.”</span></p>
-                &nbsp;
-              <div class="figure large medium-height editable block">
-                <p class="title">Figure 4.5</span> - Cell-by-Cell Encoding of Raster Data</p>
-              <image src="gis-images/4f157f6b392921b128e220ee56d2eb72.jpg"></image>
-              </div>
-            &nbsp;
-              <div class="figure large medium-height editable block">
-                <p class="title">Figure 4.6</span> - Run-Length Encoding of Raster Data</p>
-              <image src="gis-images/0a23e0d88f270aeb4cf11fde3b7b4cdf.jpg"></image>
-              </div>
-            &nbsp;
-			   <div class="figure large medium-height editable block">
-                <p class="title">Figure 4.7</span> - Quad-Tree Encoding of Raster Data</p>
-              <image src="gis-images/4ef2103c1582b29f8a7c37c8e10006c9.jpg"></image>
-              </div>
-            &nbsp;
 			<h3>Advantages/Disadvantages of the Raster Model</h3>
             &nbsp;
               <p><span style="font-size: 1.3rem;">In comparison with the raster data model, vector data models tend to be better representations of reality due to the accuracy and precision of points, lines, and polygons over the regularly spaced grid cells of the raster model. This results in vector data tending to be more aesthetically pleasing than raster data.</span></p>
