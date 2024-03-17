@@ -23,6 +23,29 @@
       body {
         overflow-x: hidden;
       }
+      @media only screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden;
+            }
+            .container {
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 
 
@@ -132,7 +155,7 @@
                 <div class="figure large medium-height editable block" id="campbell_1.0-ch03_s01_s01_t01" >
                   <p class="title">Table 3.1</span></p>
                   <div class="informaltable block" frame="all">
-                    <table cellpadding="0" cellspacing="0">
+                    <table cellpadding="0" cellspacing="0" style="font-size: medium;">
                         <thead>
                             <tr>
                                 <th>File Name</th>
@@ -212,7 +235,7 @@
             <p><span style="font-size: 1.3rem;">The second unseen but critical element to the file is the spaces in between each column or field. In the example, it appears as though a space separates the “name” column from the “height” column. Upon closer inspection, however, note how the initial values of the “height” column are aligned. If a single space was being used to separate each column, the height column would not be aligned. In this case a tab is being used to separate the columns of each row. The character that is used to separate columns within a flat file is called the delimiter or separator. Though any character can be used as a delimiter, the most common delimiters are the tab, the comma, and a single space. The following are examples of each.</span></p>
             &nbsp;
             <div class="informaltable block" frame="all">
-              <table cellpadding="0" cellspacing="0">
+              <table cellpadding="0" cellspacing="0" style="font-size: medium;">
                   <thead>
                       <tr>
                           <th>Tab-Delimited</th>
@@ -252,7 +275,7 @@
           <p><span style="font-size: 1.3rem;">Note that latitude and longitude can be expressed in degrees-minutes-seconds (DMS) or in decimal degrees (DD). When using decimal degrees, latitudes above the equator and longitudes east of the prime meridian are positive, and latitudes below the equator and longitudes west of the prime meridian are negative (see the following table for examples).</span></p>
           &nbsp;
               <div class="informaltable block" frame="all">
-                <table cellpadding="0" cellspacing="0">
+                <table cellpadding="0" cellspacing="0" style="font-size: medium;">
                     <thead>
                         <tr>
                             <th>Nominal location</th>
@@ -289,8 +312,8 @@
             &nbsp;
             <p><span style="font-size: 1.3rem;">When we want to map things like mountains, rivers, streets, and buildings, we need to define how the lines of latitude and longitude will be oriented and positioned on the sphere. A datum serves this purpose and specifies exactly the orientation and origins of the lines of latitude and longitude relative to the center of the earth or spheroid.</span></p>
             &nbsp;
-            <div class="informaltable block" frame="all">
-              <table cellpadding="0" cellspacing="0">
+            <div class="informaltable block, container" frame="all">
+              <table cellpadding="0" cellspacing="0" style="font-size: medium;">
                   <thead>
                       <tr>
                           <th>Country</th>

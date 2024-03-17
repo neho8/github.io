@@ -23,6 +23,30 @@
       body {
         overflow-x: hidden;
       }
+      @media only screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden;
+            }
+            .container {
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        /* Your existing CSS for table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 
 
@@ -184,7 +208,7 @@
                 <ol class="orderedlist">
                   <li>Identify the three violations of normal forms in the following table.</li>
                   &nbsp;
-                  <div class="informaltable block" frame="all">
+                  <div class="informaltable block, container" frame="all">
                     <table cellpadding="5" cellspacing="0" style="font-size: medium;">
                         <thead>
                             <tr>
