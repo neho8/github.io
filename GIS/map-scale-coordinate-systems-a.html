@@ -19,6 +19,34 @@
   <link id="u-theme-google-font" rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      @media only screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden;
+            }
+            .container {
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 
 
 
@@ -139,7 +167,7 @@
               <p><span style="font-size: 1.3rem;">Note that latitude and longitude can be expressed in degrees-minutes-seconds (DMS) or in decimal degrees (DD). When using decimal degrees, latitudes above the equator and longitudes east of the prime meridian are positive, and latitudes below the equator and longitudes west of the prime meridian are negative (see the following table for examples).</span></p>
               &nbsp;
               <div class="informaltable block" frame="all">
-                <table cellpadding="0" cellspacing="0">
+                <table cellpadding="0" cellspacing="0" style="font-size: medium;">
                     <thead>
                         <tr>
                             <th>Nominal location</th>
