@@ -106,6 +106,13 @@
   top: -39%;
 }
 
+@media (min-width: 1919px) {
+  .u-section-1 .u-sheet-1,
+  .u-section-1 .u-post-details-1 {
+    min-height: 700px;
+  }
+}
+
 @media (max-width: 1199px) {
   .u-section-2 .u-sheet-1 {
     min-height: 518px;
