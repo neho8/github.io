@@ -96,29 +96,61 @@
     <section class="u-clearfix u-palette-1-light-3 u-section-1" id="sec-1b08">
       <div class="u-clearfix u-sheet u-sheet-1">
         <style>
-          @media(min-width: 1200px) {
+          @media (min-width: 1200px) {
               .image-container {
                   display: block;
               }
           }
       
-          @media(max-width: 1199px) {
+          @media (max-width: 1199px) {
               .image-container {
                   display: none;
               }
           }
-          
-          @media (max-width: 1919px) {
-    .image-container img {
-        height: 2000x;
-        width: 450px;
-        padding-left: 40px;
+      
+          @media (max-width: 1899px) {
+              .image-container img {
+                  height: 2000px;
+                  width: 450px;
+                  padding-left: 40px;
+              }
+          }
+
+          @media (min-width: 1800px) and (max-width: 1899px) {
+              .image-container {
+                  display: block;
+              }
+              .image-container img {
+            height: 2200px;
+            width: 550px;
+            padding-left: 40px;
+        }
     }
-}
-      </style>
+          
+          @media (min-width: 1900px) and (max-width: 3000px) {
+              .image-container {
+                  display: block;
+              }
+              .image-container img {
+            height: 2000px;
+            width: 650px;
+        }
+    }
+
+          @media (min-width: 1000px) and (max-width: 1199px) {
+              .image-container {
+                  display: block;
+              }
+              .image-container img {
+            height: 2180px;
+            width: 450px;
+            padding-left: 20px;
+        }
+    }
+      </style>      
       
       <div class="image-container">
-          <img src="../GIS/GIS(1).png" height="2000px" width="550px" />
+          <img src="../GIS/GIS(1).png"/>
       </div>
       
 <h2 class="u-text u-text-custom-color-1 u-text-default u-text-1" style="
