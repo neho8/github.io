@@ -19,18 +19,18 @@
       }
 
       @media(max-width: 900px) {
-            /* Make the TOC title smaller than the GIS Foundations title */
+           
             #toc-title1 {
-                font-size: 1.23rem !important; /* Adjust the size as needed */
+                font-size: 1.23rem !important;
             }
-            /* Increase the text size of TOC items */
+            
             #toc-sub-title {
-              font-size: 1.25rem !important; /* Reduce space between items */
+              font-size: 1.25rem !important;
             }
 
-            /* Adjust the size of TOC item links */
+            
             #toc-text {
-                font-size: 1.0rem; /* Adjust the size as needed */
+                font-size: 1.0rem;
             }
           }
 
@@ -123,6 +123,28 @@
               .image-container img {
             height: 2200px;
             width: 550px;
+            padding-left: 40px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 899px) {
+              .image-container {
+                  display: block;
+              }
+              .image-container img {
+            height: 2200px;
+            width: 350px;
+            padding-left: 40px;
+        }
+    }
+
+    @media (min-width: 900px) and (max-width: 999px) {
+              .image-container {
+                  display: block;
+              }
+              .image-container img {
+            height: 2300px;
+            width: 350px;
             padding-left: 40px;
         }
     }
