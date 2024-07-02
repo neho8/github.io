@@ -262,9 +262,75 @@
     <p><strong>Figure 13:</strong> Example of image with 30cm spatial resolution (Source: Digital Globe <a href="http://microsites.digitalglobe.com/30cm/" target="_blank">http://microsites.digitalglobe.com/30cm/</a>)</p>
     </div>
     <p>The National Imagery Interpretability Rating Scale (NIIRS) is used as a standard to quantify the interpretability or usefulness of an image. This "rating" scale, originally inspired by the military to qualify aerial imaging, runs from 0 (worst quality) to 9 (best quality). An excerpt is presented in Figure 14, which also provides an approximate relation between NIIRS scale and GSD (GSD being one of several factors influencing the interpretability of an image).</p>
-    <div class="figure large medium-height editable block" id="campbell_1.0-ch04_s01_f01"><img src="images/NIRS-800x417.png" width="800" height="417">
-    <p><strong>Figure 14:</strong> Excerpt of NIIRS scale related to GSD (Source: <a href="http://fas.org/irp/imint/niirs.htm" target="_blank">http://fas.org/irp/imint/niirs.htm</a>)</p>
+    <br><br>
+    <div class="figure large medium-height editable block" id="campbell_1.0-ch04_s01_f01">
+        <div class="informaltable block" frame="all">
+            <table cellpadding="0" cellspacing="0" style="font-size: medium;">
+                <thead>
+                    <tr>
+                        <th>NIIRS Scale</th>
+                        <th>GSD (approx.)</th>
+                        <th>Visible</th>
+                        <th>Radar</th>
+                        <th>Multispectral</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>> 4.5 m</td>
+                        <td>Distinguish between taxi-ways and runways at a large airfield</td>
+                        <td>Detect a large cleared swath in a densely wooded area</td>
+                        <td>Distinguish between urban and rural areas</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2.25 - 4.5 m</td>
+                        <td>Distinguish between types of houses, boats, etc.</td>
+                        <td>Detect large buildings</td>
+                        <td>Identify urban road network pattern</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1.25 - 2.25 m</td>
+                        <td>Identify a large surface ship in port by type</td>
+                        <td>Detect medium-sized aircraft</td>
+                        <td>Identify major street patterns in urban areas</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0.37 - 0.6 m</td>
+                        <td>Identify radar as vehicle-mounted or trailer-mounted</td>
+                        <td>Count all medium helicopters</td>
+                        <td>Detect ditch irrigation of beet fields</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>0.30 - 0.45 m</td>
+                        <td>Identify equipment on a recreational vehicle</td>
+                        <td>Distinguish between two adjacent parked cars</td>
+                        <td>Detect localized damage to crops</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>0.10 - 0.20 m</td>
+                        <td>Identify individual rail ties</td>
+                        <td>Detect road/street lamps in an urban residential area</td>
+                        <td>Distinguish individual rows of crops</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>< 0.05 m</td>
+                        <td>Identify vehicle registration numbers (VRN) on trucks</td>
+                        <td>Identify trucks as cab-over-engine or engine-in-front</td>
+                        <td>Identify individual tree canopies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+      <p><strong>Figure 14:</strong> Excerpt of NIIRS scale related to GSD (Source: <a href="http://fas.org/irp/imint/niirs.htm" target="_blank">http://fas.org/irp/imint/niirs.htm</a>)</p>
     </div>
+    <br><br>
     <h4 id="3.2"><a name="ref_3.2" id="ref_3.2"></a>3.2 Scene size</h4>
     <p>The size of the scene to be observed is another important parameter. Earth Observation sensors onboard satellites are characterised by their swath width. The swath of an instrument is the width of the strip on the ground it can image when the satellite orbits around the Earth. The swath depends on the features of the instrument and on the orbit of the satellite. Generally, the higher the spatial resolution, the lower the swath of the instrument. As an example, the very high-resolution (0.46 m) instrument onboard Worldview-2 has a 16.4 km swath, while Sentinel-2 can image strips 290 km wide with a 5 m spatial resolution.</p>
     <p>To cover large areas, VHR imagery requires a large number of images, which has an impact on the data volume to be managed and on the acquisition cost. Therefore, a trade-off analysis between resolution and cost needs to be performed before ordering satellite images.</p>
