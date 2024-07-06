@@ -19,14 +19,12 @@
   <link id="u-theme-google-font" rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
-
-
-
   <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": ""
 }</script>
+</head>
 <body class="u-body u-palette-1-base u-xl-mode" data-lang="en">
   <header class="u-box-shadow u-clearfix u-header u-white u-header" id="sec-6e12">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -115,9 +113,10 @@
     <li><strong><a href="#ref_8">8.REFERENCE SOURCES </a></strong></li>
     <li><strong><a href="#ref_9">9.USEFUL LINKS</a></strong></li>
     <li><strong><a href="#eo_acro">10.ACRONYMS</a></strong></li>
-    <p></p>
-    <br><br>
-    </ul><h3 id="1"><a name="ref_1" id="ref_1"></a>1. INTRODUCTION</h3>
+    <p class="m-d-n"></p>
+    <br class="m-d-n"><br class="m-d-n">
+    </ul>
+    <h3 id="1"><a name="ref_1" id="ref_1"></a>1. INTRODUCTION</h3>
     <p>The aim of this guide is to help non-experts in providing a starting point in the decision process for selecting an appropriate Earth Observation (EO) solution. EO is defined as the process of acquiring observations of the Earth’s surface and atmosphere via remote sensing instruments. The acquired data is usually in the form of digital imagery. Earth’s surface can be observed from different platforms, each presenting its own advantages and limitations. Aerial platforms, for instance, generally provide the best resolutions and are very adjustable to the users’ needs, but the high cost of chartering a plane and paying the related manpower (pilots and technicians) restricts its use. Drones, also called Remotely Piloted Aircraft Systems (RPAS), are a fast-growing technology that tackles this cost problem, but regulations and their low carrying capacity currently limits their range of activity. On the other hand, satellites allow for reliable, true global coverage even above the most remote locations enabling regular repeat observations.</p>
     <p>This document focuses primarily on operational applications of Earth Observation data.&nbsp; Many other science applications are also possible.</p>
     
@@ -155,7 +154,7 @@
       <p><strong>Figure 4:</strong> Example of Pan-Sharpening</p>
     </div>
     <p id="2.1.4"><a name="ref_2.1.4" id="ref_2.1.4"></a><strong>2.1.4 Hyper-spectral</strong></p>
-    <table style="width: 390px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
+    <table class="xs-w-full" style="width: 390px;" border="0" cellpadding="5" align="left"><tbody><tr><td>
     <p><img src="images/figure5.jpg" title="Example of hyper-spectral data product" width="380" height="230" style="float: left;"></p>
     </td>
     </tr><tr><td><strong>Figure 5</strong>: Example of Hyperspectral Data Product</td>
@@ -187,7 +186,7 @@
     
     
     <p><a name="ref_2.2.3" id="ref_2.2.3"></a><strong>2.2.3 Radar Altimetry</strong></p>
-    <table style="width: 410px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
+    <table class="xs-w-full" style="width: 410px;" border="0" cellpadding="5" align="left"><tbody><tr><td>
     <p><img src="images/Altimetry-derived%20mean%20dynamic%20topography.png" title="Altimetry-derived mean dynamic topography" width="400" height="400" style="float: left; margin-right: 20px;"></p>
     </td>
     </tr><tr><td>&nbsp;</td>
@@ -197,7 +196,7 @@
     <p class="figure large medium-height editable block"><strong>Figure 7: </strong>Altimetry-derived mean dynamic topography</p>
   
     <p><a name="ref_2.2.4" id="ref_2.2.4"></a><strong>2.2.4 GNSS-R</strong></p>
-    <table style="width: 530px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
+    <table class="xs-w-full" style="width: 530px;" border="0" cellpadding="5" align="left"><tbody><tr><td>
     <p><img src="images/Starlab%20GNSS-R%20Sensor%20Oceanpal.png" title="Starlab GNSS-R Sensor Oceanpal" width="520" height="389" style="float: left; margin-right: 20px;"></p>
     </td>
     </tr></tbody></table><p>GNSS reflectometry (GNSS-R) is a relatively new category of satellite navigation applications which entails a method of remote sensing to receive and process microwave signals reflected from various surfaces to extract information about those surfaces.</p>
@@ -208,9 +207,8 @@
     <p class="figure large medium-height editable block"><strong>Figure 8: </strong>Starlab GNSS-R Sensor Oceanpal for monitoring lake level in ESA Applications project.</p>
     
     <p><a name="ref_2.2.5" id="ref_2.2.5"></a><strong>2.2.5 Radar Scatterometry</strong></p>
-    <table style="width: 306px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
-    <p><img src="images/Composite%20radar%20scatterometer.png" title="Composite radar scatterometer image of Antarctica" width="291" height="290" style="float: left; margin-right: 20px;"></p>
-    </td>
+    <table class="xs-w-full" style="width: 306px;" border="0" cellpadding="5" align="left"><tbody><tr><td>
+    <img src="images/Composite%20radar%20scatterometer.png" title="Composite radar scatterometer image of Antarctica" width="291" height="290" style="float: left; margin-right: 20px;">    </td>
     </tr></tbody></table><p>A radar scatterometer is a microwave radar sensor used to measure the reflection or scattering effect produced while scanning the surface of the Earth from an aircraft or a satellite. It provides a measure of wind speed and direction near the sea surface.</p>
     <p>The radar scatterometer measures the backscatter from small (cm) waves at the sea surface, at skew incidence angles. From these sea roughness measurements the wind vector at 10 m height is calculated. Radar scatterometer data are important sources of information for Numerical Weather Prediction and oceanography.</p>
     <p>Radar scatterometers can also provide information such as sea ice cover.&nbsp; Sea ice typically reflects more of the radar energy emitted by the sensor than the surrounding ocean, so it appears brighter in a radar scatterometer image.</p>
@@ -239,7 +237,7 @@
     <p><strong>Figure 11:</strong> Illustration of Stereoscopic techniques</p>
     </div>
     <p>As stated in Section <a href="#ref_2.2.1">2.2.1 Synthetic Aperture Radar,</a> the technique of across-track SAR interferometry can also be used to generate 3D surface models.</p>
-    <table style="width: 410px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
+    <table class="xs-w-full" style="width: 410px;" border="0" cellpadding="5" align="left"><tbody><tr><td>
     <p><img src="images/figure9.jpg" title="Distinction between DSM and DTM" width="400" height="180" style="float: left;"></p>
     </td>
     </tr><tr><td><strong>Figure 12:</strong> Distinction between DSM and DTM (Source: <a href="http://www.geoimage.com.au/" target="_blank">geoimage.com.au</a>)</td>
@@ -330,7 +328,7 @@
         </div>    
       <p><strong>Figure 14:</strong> Excerpt of NIIRS scale related to GSD (Source: <a href="http://fas.org/irp/imint/niirs.htm" target="_blank">http://fas.org/irp/imint/niirs.htm</a>)</p>
     </div>
-    <br><br>
+    <br class="m-d-n"><br class="m-d-n">
     <h4 id="3.2"><a name="ref_3.2" id="ref_3.2"></a>3.2 Scene size</h4>
     <p>The size of the scene to be observed is another important parameter. Earth Observation sensors onboard satellites are characterised by their swath width. The swath of an instrument is the width of the strip on the ground it can image when the satellite orbits around the Earth. The swath depends on the features of the instrument and on the orbit of the satellite. Generally, the higher the spatial resolution, the lower the swath of the instrument. As an example, the very high-resolution (0.46 m) instrument onboard Worldview-2 has a 16.4 km swath, while Sentinel-2 can image strips 290 km wide with a 5 m spatial resolution.</p>
     <p>To cover large areas, VHR imagery requires a large number of images, which has an impact on the data volume to be managed and on the acquisition cost. Therefore, a trade-off analysis between resolution and cost needs to be performed before ordering satellite images.</p>
@@ -352,11 +350,16 @@
     <p>The quality and usefulness of an EO image is governed by several parameters.</p>
     <p><strong>Bit depth</strong> <br> When an instrument is imaging an area, each pixel is coded on a certain number of bits (typically from 8 to 16 bits) per band. In practice, this relates to the number of nuances that can be recorded: an 8-bit instrument will make the distinction between 2<sup>8</sup>=256 colours whereas a 12-bit instrument will measure the intensity according to a scale of 2<sup>12</sup>=4,096 nuances. Improved bit depth, also called radiometric resolution, aids the ability to discern detail in an image’s brightest and darkest (shadow) areas.</p>
     <p><strong>Off-nadir angle</strong> <br> In practice, very high-resolution satellite sensors generally do not collect images at nadir, i.e. looking straight down at the target, but acquire images at an angle. Satellite operators report this as the "off-nadir angle" where 0 degrees would be looking straight down. For optical imagery, a typical maximum is an off-nadir angle of 30 degrees.</p>
-    <table style="width: 160px !important;" border="0" cellpadding="5" align="left"><tbody><tr><td>
-    <p><img src="images/figure13.png" title="Illustration of the building-lean effect" width="146" height="161" style="display: block; float: left;"></p>
-    </td>
-    <tr><td><strong>Figure 16:</strong> Illustration of the building-lean effect (Source: <a href="https://natural-resources.canada.ca/maps-tools-and-publications/satellite-imagery-elevation-data-and-air-photos/tutorial-fundamentals-remote-sensing/satellites-and-sensors/geometric-distortion-imagery/9401" target="_blank">http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-p…</a>)</td></tr>
-  </tr></tbody></table><p>A lower off-nadir angle often is desirable, especially in areas of high relief or tall buildings to minimize the so-called "building-lean" effect (see Figure 16). This problem is inherent in remote sensing, as we attempt to accurately represent the three-dimensional surface of the Earth as a two-dimensional image. Objects directly below the centre of the camera lens (i.e. at the nadir) will have only their tops visible, while all other objects will appear to lean away from the centre of the photo such that their tops and sides are visible. If the objects are tall, are far away from the centre of the photo, or if the off-nadir angle is large, the distortion and positional error will be larger.</p>
+    <p>A lower off-nadir angle often is desirable, especially in areas of high relief or tall buildings to minimize the so-called "building-lean" effect (see Figure 16). This problem is inherent in remote sensing, as we attempt to accurately represent the three-dimensional surface of the Earth as a two-dimensional image. Objects directly below the centre of the camera lens (i.e. at the nadir) will have only their tops visible, while all other objects will appear to lean away from the centre of the photo such that their tops and sides are visible. If the objects are tall, are far away from the centre of the photo, or if the off-nadir angle is large, the distortion and positional error will be larger.</p>
+    <div style="width: 390px !important; border: 0; padding: 5px; display: flex; align-items: center;">
+      <img src="images/figure13.png" title="Illustration of the building-lean effect" width="146" height="161" style="display: block; float: left; margin-right: 10px;">
+      <div>
+          <strong>Figure 16:</strong> Illustration of the building-lean effect (Source: 
+          <a href="https://natural-resources.canada.ca/maps-tools-and-publications/satellite-imagery-elevation-data-and-air-photos/tutorial-fundamentals-remote-sensing/satellites-and-sensors/geometric-distortion-imagery/9401" target="_blank">
+          http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-p...
+          </a>)
+      </div>
+    </div>    
     <p><br><strong>Sun-elevation angle</strong></p>
     <p>Another parameter to take into account is the angle of the sun above the horizon. Imagery collected with low sun elevation angles may contain data that are too dark to be usable. This will be more pronounced in high-relief areas and areas with taller objects, such as trees and buildings, where low sun elevation angles mean longer shadows will be cast. A typical minimum Sun elevation angle is 30 degrees.</p>
     <p>Due to the fact that most EO satellites are in Sun-Synchronous Orbits, there is little control over the time of day an area of interest is imaged. This is typically set to around 10:30 AM for optical imagery, or 6:00 AM for active imagery (dawn-dusk orbits).</p>
@@ -382,9 +385,9 @@
     <h3><a name="ref_6" id="ref_6"></a>6. HOW TO ACCESS DATA</h3>
     <p>Earth Observation data can be acquired through different channels. Free of cost data is generally provided by public agencies, under potential conditions linked to the application envisaged and the nationality of the entity requiring access. Data can also be bought from private companies operating commercial satellites, or by their numerous certified resellers.</p>
     <p>This non-exhaustive list has been created for information only. It gathers an arbitrary selection of representative EO images providers. This does not constitute in any way a recommendation for any of the companies listed.</p>
-    <p></p>
+    <p class="m-d-n"></p>
     <caption style="margin-bottom: 10px;"><strong><span style="color: #000000; font-size: 1.4rem;">PUBLIC EO DATA PROVIDERS</span></strong></caption>
-    <br><br>
+    <br class="m-d-n"><br>
     <table border="0" style="font-size: 20px;">
       <tbody>
           <tr>
@@ -560,6 +563,6 @@
       </a>
     </div>
     </footer>
-  
-  
   </body>
+  </html>
+
