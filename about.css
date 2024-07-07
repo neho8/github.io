@@ -223,42 +223,57 @@
     margin-bottom: 0px;
   }
 }
-@media (max-width: 991px){
-img{
+@media (max-width: 991px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  img {
     max-width: 100%;
     height: auto;
   }
-  .informaltable{
+
+  .informaltable {
     display: block;
-    overflow-x: scroll;
+    overflow-x: auto; /* Allow table to scroll horizontally if needed */
+    width: 100%; /* Ensure the container itself doesn't exceed 100% width */
   }
-  .informaltable table{
-    width: 800px;
+
+  .informaltable table {
+    min-width: 100%; /* Ensure table takes at least the full width of the container */
   }
-  .informaltable table td:nth-child(2){
+
+  .informaltable table td:nth-child(2) {
     white-space: nowrap;
   }
-  a{
+
+  a {
     word-break: break-word;
   }
-  table.xs-w-full{
+
+  table.xs-w-full {
     width: 100% !important;
   }
-  .u-section-1 .u-sheet-1{
+
+  .u-section-1 .u-sheet-1 {
     width: 100% !important;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .m-d-n{
+
+  .m-d-n {
     display: none;
   }
-  .u-footer .u-text-1{
+
+  .u-footer .u-text-1 {
     width: 100%;
   }
-  h3{
+
+  h3 {
     margin-top: 30px;
   }
-  #ref_1, #ref_2, #ref_3, #ref_4, #ref_5, #ref_6, #ref_7, #ref_8, #ref_9, #eo_acro, #ref_2.1{
+
+  #ref_1, #ref_2, #ref_3, #ref_4, #ref_5, #ref_6, #ref_7, #ref_8, #ref_9, #eo_acro, #ref_2.1 {
     margin-top: -35px;
     padding-top: 35px;
   }
