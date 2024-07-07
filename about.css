@@ -240,7 +240,8 @@
   }
 
   .informaltable table {
-    min-width: 100%; /* Ensure table takes at least the full width of the container */
+    width: 100%; /* Ensure table takes the full width of the container */
+    font-size: 14px; /* Smaller font size for mobile */
   }
 
   .informaltable table td:nth-child(2) {
@@ -278,3 +279,4 @@
     padding-top: 35px;
   }
 }
+
