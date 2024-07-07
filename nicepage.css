@@ -41413,40 +41413,40 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 1.4rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         p:not(.u-text-variant)
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         a
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         blockquote
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         ul:not(.u-unstyled)
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         ol
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
         .u-post-content
         {
-        font-size: 1rem;
+        font-size: 1.3rem;
         }
         }
         /*end-media rules*/
