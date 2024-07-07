@@ -235,13 +235,11 @@
 
   .informaltable {
     display: block;
-    overflow-x: auto; /* Allow table to scroll horizontally if needed */
-    width: 100%; /* Ensure the container itself doesn't exceed 100% width */
+    overflow-x: scroll;
   }
 
   .informaltable table {
-    width: 100%; /* Ensure table takes the full width of the container */
-    font-size: 14px; /* Smaller font size for mobile */
+    width: 800px;
   }
 
   .informaltable table td:nth-child(2) {
