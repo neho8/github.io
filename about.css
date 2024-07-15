@@ -225,7 +225,7 @@
 }
 @media (max-width: 991px) {
   body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: visible; /* Prevent horizontal scrolling */
   }
 
   img {
